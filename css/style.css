@@ -1,0 +1,192 @@
+/*
+--- fonts ---
+font-family: usual, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+-italic-
+font-family: usual, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+-medium-
+font-family: usual, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+-bold-
+font-family: usual, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+-------
+font-family: minion-pro, serif;
+font-weight: 400;
+font-style: normal;
+
+-medium-
+font-family: minion-pro-caption, serif;
+font-weight: 500;
+font-style: normal;
+
+-semibold-
+font-family: minion-pro-caption, serif;
+font-weight: 600;
+font-style: normal;
+
+--- color ---
+darkblue: #1d4c7f;
+paleblue: #eaf4ff;
+dark grey: #3b3b3b;
+grey: #707070;
+orange: #ff5f1f
+
+--- table of contents ---
+1. general styles
+2. header styles
+3. nav styles
+4. top styles
+5. cta styles
+6. main section styles
+7. bottom section styles
+8. footer styles
+
+*/
+
+/* 1. general styles */
+@import url("https://use.typekit.net/mom4myj.css");
+
+article, aside, figure, footer, header, nav, main, section, video, audio {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: usual, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3b3b3b;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1024px;
+}
+
+h1 {
+    font-family: minion-pro-caption, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #1d4c7f;
+}
+
+h2 {
+    font-family: minion-pro-caption, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    color: #1d4c7f;
+}
+
+h3 {
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #1d4c7f;
+}
+
+h4 {
+    font-family: minion-pro-caption, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    color: #1d4c7f;
+}
+
+a {
+    color: #1d4c7f;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 2. header styles */
+header .logo {
+    padding: 1em 0;
+    width: 40%;
+}
+
+/* 3. nav styles */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    border-bottom: solid 1px #eaf4ff;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    padding: .5em;
+    color: #1d4c7f;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+#nav nav {
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+/* ---advanced checkbox hack--- */
+body {
+    -webkit-animation: bugfix infinite is;
+}
+@-webkit-keyframes bugfix {
+    from {padding: 0}
+    to {padding: 0}
+}
+/* ---end advanced checkbox hack--- */
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+#nav label {
+    display: block;
+    background: url(../images/menuBtn.png) no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    font-size: 2em;
+    top: -.8em;
+    right: 1em;
+}
+
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
+}
+
+/* About Us page */
+
+/* Members page */
