@@ -192,7 +192,7 @@ nav ul li:last-child {
 body {
     -webkit-animation: bugfix infinite is;
 }
-@-webkit-keyframes: bugfix {
+@-webkit-keyframes bugfix {
     from {padding: 0}
     to {padding: 0}
 }
