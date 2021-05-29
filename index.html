@@ -16,7 +16,8 @@
 <body>
     <!-- Join ipssa section. Hidden for large scree -->
     <section id="cta" class="join">
-        <h2>Turn your job into a profession, join IPSSA, San Diego<a href="pages/members.html"></a></h2>
+        <h2>Turn your job into a profession, join IPSSA, San Diego</h2>
+        <a href="pages/members.html" class="blueBtn">JOIN</a>
     </section>
 
     <!-- Header with navigation bar -->
@@ -56,9 +57,9 @@
               <li><a href="pages/members.html">Members</a></li>
                   <ul>
                       <li><a href="#">Member Login</a></li>
-                      <li><a href="#">Meetings</a></li>
+                      <li><a href="pages/meetings.html">Meetings</a></li>
                   </ul>
-              <li><a href="pages/members.html">Join</a></li>
+              <li><a href="pages/members.html" class="blueBtn">JOIN</a></li>
           </ul>
         </nav>
         </div><!-- end #nav -->
@@ -71,21 +72,34 @@
             <h1>San Diego Chapter</h1>
             <p>Need to Service or Repair your pool or spa?</p>
             <p>You are just a click away from Pool service pros who service your zip code!</p>
-            <input type="submit" id="submit" value="FIND A PRO">
+            <a href="#" class="whiteBtn">FIND A PRO</a>
         </section>
-        <section class="waterWatcher">
+        <!-- show only on medium and up -->
+        <section class="joinLg">
+            <h2>Turn your job into a profession, join IPSSA, San Diego</h2>
+            <div class="flexContainer">
+                <img src="images/pool-house-small.jpeg" alt="pool house">
+                <div class="colRt">
+                   <p>The Independent Pool and Spa Service Association, Inc. exists for the mutual professional benefit and growth of its members and for the continued improvement of the pool and spa service industry's image.</p>
+                   <p>If you are not yet a member, please take a look at our member advantages and join to<span class="loginHere">Current members, <a href="#">login here.</a></span></p>
+                   <a href="#" class="blueBtn">JOIN</a>
+                </div>
+            </div>
+        </section>
+        <section class="saveLife">
             <h2>Save a life - Be a Water Watcher</h2>
             <h3>We are serious about drowning prevention.</h3>
             <p>Practice pool safety and be a 'Water Watcher'. Watch our water safety videos on our YouTube channel and download the drowning prevention brochure and Water Watcher tag.</p>
             <div class="brocure">
-                <a href="#"><img src="" alt="Brocure"></a>
-                <a href="#"></a>
+                <a href="#"><img src="images/wwBrochure-landscape.jpg" alt="Brochure"></a>
+                <a href="#">Download Drowning Prevention Brochure</a>
             </div>
             <div class="wwTag">
                 <a href="#"><img src="" alt="WW Tag"></a>
-                <a href="#"></a>
+                <a href="#">Download Water Watcher Tag</a>
             </div>
         </section>
+        <!-- Awards and events section -->
         <section id="awards">
             <article>
                 <h3>2020 BK Taylor Chapter Award</h3>
@@ -102,23 +116,23 @@
         </section>
     </main>
       
-   <footer>
-       <img src="images/logo.png" alt="logo" class="logo">
-       <div class="info">
-           <h4>IPSSA, San Diego Chapter</h4>
-           <p>Mark Curran, President</p>
-           <p>PO Box 600862,</p>
-           <p>San Diego, CA 92160-0862</p>
-           <p class="contact">Contact:619-249-3513</p>
-           <p>E-mail<a href="mailto:mtcurran@cox.net" target="_blank" class="email">mtcurran@cox.net</a></p>
-       </div>
-       <div id="social">
-           <h4>Follow us on</h4>
-           <a href="#"><img src="" alt="Facebook"></a>
-           <a href="#"><img src="" alt="YouTube"></a>
-           <a href="#"><img src="" alt="Twitter"></a>
-       </div>
-       <p id="copy">Copyright 2002-2020. All Rights Reserved.</p>
-   </footer>
+    <footer>
+        <img src="images/ipssa-logo11.png" alt="logo" class="logo">
+        <div class="info">
+            <h4>IPSSA, San Diego Chapter</h4>
+            <p>Mark Curran, President</p>
+            <p>PO Box 600862,</p>
+            <p>San Diego, CA 92160-0862</p>
+            <p class="contact">Contact:619-249-3513</p>
+            <p>E-mail: <a href="mailto:mtcurran@cox.net" target="_blank" class="email">mtcurran@cox.net</a></p>
+        </div>
+        <div id="social">
+            <h4>Follow us on</h4>
+            <a href="#"><img src="" alt="Facebook"></a>
+            <a href="#"><img src="" alt="YouTube"></a>
+            <a href="#"><img src="" alt="Twitter"></a>
+        </div>
+        <p id="copy">Copyright 2002-2020. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
