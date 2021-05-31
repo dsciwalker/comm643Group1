@@ -53,6 +53,7 @@ orange: #ff5f1f;
 9. button styles
 10. media query
 
+
 */
 
 /* 1. general styles */
@@ -499,3 +500,12 @@ a.blueBtn {
 /* About Us page */
 
 /* Members page */
+
+/*  11. Title Bar style for all pages  */
+.titleBar {
+    background-color: #eaf4ff;
+    padding: 1em;
+}
+.titleBar h1{
+    text-align: center;
+}
