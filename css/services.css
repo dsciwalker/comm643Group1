@@ -1,0 +1,48 @@
+.twoCol {
+    margin: 0 2em;
+}
+
+.twoCol p {
+    line-height: 1.3em;
+    padding-bottom: 1em;
+}
+
+#serArt {
+    margin: 1em 0;
+    padding: 2em 0;
+    border-top: solid 2px #eaf4ff;
+}
+
+#serArt article {
+    display: block;
+    background-color: #eaf4ff;
+    padding: 1em 2em 2em;
+    margin: 3em 5em;
+}
+
+@media screen and (min-width: 800px) {
+    .twoCol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .twoCol h2 {
+        grid-column: span 2;
+    }
+    
+    .twoCol p {
+        order: 2;
+        padding: 0 0 0 1em;
+        align-self: center;
+    }
+     #serArt {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        padding:  2em 2em 3em;
+    }
+    
+    #serArt article {
+        padding: 1em 2em 2em;
+        margin: 3em 0;
+    }

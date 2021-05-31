@@ -3,44 +3,36 @@
 font-family: usual, sans-serif;
 font-weight: 400;
 font-style: normal;
-
 -italic-
 font-family: usual, sans-serif;
 font-weight: 400;
 font-style: italic;
-
 -medium-
 font-family: usual, sans-serif;
 font-weight: 600;
 font-style: normal;
-
 -bold-
 font-family: usual, sans-serif;
 font-weight: 700;
 font-style: normal;
-
 -------
 font-family: minion-pro, serif;
 font-weight: 400;
 font-style: normal;
-
 -medium-
 font-family: minion-pro-caption, serif;
 font-weight: 500;
 font-style: normal;
-
 -semibold-
 font-family: minion-pro-caption, serif;
 font-weight: 600;
 font-style: normal;
-
 --- color ---
 darkblue: #1d4c7f;
 paleblue: #eaf4ff;
 dark grey: #3b3b3b;
 grey: #707070;
 orange: #ff5f1f;
-
 --- table of contents ---
 1. general styles
 2. header styles
@@ -52,7 +44,6 @@ orange: #ff5f1f;
 8. footer styles
 9. button styles
 10. media query
-
 */
 
 /* 1. general styles */
@@ -73,12 +64,13 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #3b3b3b;
-    margin: 0 auto;
+    margin: 0 auto; /* 0531 */
 }
 
 main {
     max-width: 1024px;
     text-align: center; 
+    margin: 0 auto;
 }
 
 h1 {
@@ -133,13 +125,18 @@ img {
 }
 
 /* 2. header styles */
+header {
+    max-width: 1024px; /* 0531 */
+    margin: 0 auto; /* 0531 */
+}
+
 header .logo {
     padding: 1em 0;
     margin-left: 40px;
     width: 40px;
 }
 
-/* 3. nav styles */
+
 /* 3. nav styles */
 nav ul {
     list-style-type: none;
@@ -224,6 +221,8 @@ body {
     height: auto;
     overflow: hidden;
 }
+
+
 /* 4. cta styles */
 #cta {
     background: #eaf4ff;
@@ -252,7 +251,7 @@ body {
 
 /* 5. hero styles */
 #hero {
-    background: url(../images/hero-small.jpeg) no-repeat center;
+    background: url(../images/hero-small.jpg) no-repeat center;
     background-size: cover;
     height: 100%;
     text-align: center;
