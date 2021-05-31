@@ -1,0 +1,122 @@
+/* Table of contents:
+   ------------------
+    1. General rules
+    2. Responsive Map and Calendar
+    3. General meeting and Board meeting section styles
+    4. Meeting info section styles
+    5. Media Query: Mid and large screen layout styles
+        5.1 General meeting and Board meeting section styles
+        5.2 Meeting info section styles
+*/
+
+/* 1. General rules */
+p{
+    padding:0;
+}
+.titleBar {
+    background-color: #eaf4ff;
+    padding: 1em;
+}
+.titleBar h1{
+    text-align: center;
+}
+
+/* 2. Responsive Map and Calendar */
+.map, .calWrapper {
+    position: relative;
+    /* padding-bottom: 48%;300/625 = 0.48 */
+    padding-bottom: 65%;
+    height: 0;
+    overflow: hidden;
+}
+.map iframe, .calWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.calWrapper {
+    padding-bottom: 100%;
+}
+
+/* 3. General meeting and Board meeting section styles */
+#generalMeeting, #boardMeeting {
+    padding: 0 2em 2em 2em;
+}
+#boardMeeting, #meetingInfo {
+    border-top: solid 1px #eaf4ff;
+}
+.address, .note {
+    margin-top: 1em;
+}
+.note p{
+    color: #707070;
+    font-size: .9em;
+}
+
+/* 4. Meeting info section styles */
+#news>p{
+    padding: 0 1em 1em 1em;
+}
+#calendar{
+    border-top: solid 1px #eaf4ff;
+    padding: 0 2em 2em 2em;
+}
+#news, #calendar {
+    margin-top: 2em;
+}
+#meetingInfo{
+    margin-bottom: 2em;
+}
+
+/* 5. Media Query: Mid and large screen layout styles */
+@media screen and (min-width: 650px) {
+    /* 5.1 General meeting and Board meeting section styles */
+    #generalMeeting, #boardMeeting {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+    }
+    #generalMeeting{
+        grid-template-areas: 
+            "headding headding"
+            "map addr"
+            "map note";
+    }
+    #boardMeeting {
+        grid-template-areas: 
+            "headding headding"
+            "addr map"
+            "note map";
+    }
+    #generalMeeting h2, #boardMeeting h2 { grid-area: headding; }
+    .map { grid-area: map; }
+    .address { grid-area: addr; }
+    .note { grid-area: note; }
+
+    #generalMeeting .address p, #generalMeeting .note p {
+        text-align: left;
+    }
+    #boardMeeting .address p, #boardMeeting .note p {
+        text-align: right;
+    }
+    .address, .note {
+        margin-top: 0;
+    }
+    /* 5.2 Meeting info section styles */
+    #meetingInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #news, #calendar {
+        width: 48%;
+        margin-top: 0;    
+    }
+    #calendar{
+        border-top: none;
+        padding: 0 2em 2em 0;
+    }
+}
