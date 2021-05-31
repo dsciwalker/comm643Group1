@@ -13,13 +13,6 @@
 p{
     padding:0;
 }
-.titleBar {
-    background-color: #eaf4ff;
-    padding: 1em;
-}
-.titleBar h1{
-    text-align: center;
-}
 
 /* 2. Responsive Map and Calendar */
 .map, .calWrapper {
