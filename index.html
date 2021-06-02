@@ -12,6 +12,8 @@
     <!-- css normalization file -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Font awesome icons cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Join ipssa section. Hidden for large scree -->
@@ -20,52 +22,60 @@
         <a href="pages/members.html" class="blueBtn">JOIN</a>
     </section>
 
-    <!-- Header with navigation bar -->
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="index.html"><img src="images/ipssa-logo11.png" alt="IPSSA San Diego Logo"></a></li>
+            <li class="navItem">
+                <a href="#">About Us</a>
+                <ul class="subNav">
+                    <li><a href="#">Board Members</a></li>
+                    <li><a href="#">Chapter Supporters</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a href="#">Services</a>
+                <ul class="subNav">
+                    <li><a href="#">Find a Pro</a></li>
+                    <li><a href="#">Choosing a Pro</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a href="#">Safety</a>
+                <ul class="subNav">
+                    <li><a href="#">Water Safety</a></li>
+                    <li><a href="#">COVID</a></li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a href="#">Resources</a>
+                <ul class="subNav">
+                    <li><a href="#">Documents/Forms</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Continuing Education</a></li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a href="#">Events</a>
+            </li>
+            <li class="navItem">
+                <a href="#">Members</a>
+                <ul class="subNav">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="pages/meetings.html">Meetings</a></li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <!-- <a href="pages/members.html">JOIN</a> -->
+                <a href="pages/members.html" class="blueBtn">JOIN</a>
+            </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav><!-- end #nav -->
     <header>
-        <img src="images/logo.png" alt="logo" class="logo">
-      
-        <div id="nav">
-          <input type="checkbox" id="toggle">
-          <label for="toggle">Menu</label>
-        <nav>
-          <ul>
-              <li><a href="pages/about.html">About Us</a></li>
-                  <ul>
-                      <li><a href="#">Board Members</a></li>
-                      <li><a href="#">Chapter Supporters</a></li>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                  </ul>
-              <li><a href="pages/services.html">Services</a></li>
-                  <ul>
-                      <li><a href="#">Find a Pro</a></li>
-                      <li><a href="#">Choosing a Pro</a></li>
-                      <li><a href="#">Shop</a></li>
-                  </ul>
-              <li><a href="#">Safety</a></li>
-                  <ul>
-                      <li><a href="#">Water Safety</a></li>
-                      <li><a href="#">COVID</a></li>
-                  </ul>
-              <li><a href="#">Resources</a></li>
-                  <ul>
-                      <li><a href="#">Documents/Forms</a></li>
-                      <li><a href="#">Training</a></li>
-                      <li><a href="#">Continuing Education</a></li>
-                  </ul>
-              <li><a href="#">Events</a></li>
-              <li><a href="pages/members.html">Members</a></li>
-                  <ul>
-                      <li><a href="#">Member Login</a></li>
-                      <li><a href="pages/meetings.html">Meetings</a></li>
-                  </ul>
-              <li><a href="pages/members.html" class="blueBtn">JOIN</a></li>
-          </ul>
-        </nav>
-        </div><!-- end #nav -->
-    </header>
-  
-    <main>
         <!-- Hero section -->
         <section id="hero">
             <h1>Independent Pool &#38; Spa Service Association</h1>
@@ -74,6 +84,9 @@
             <p>You are just a click away from Pool service pros who service your zip code!</p>
             <a href="#" class="whiteBtn">FIND A PRO</a>
         </section>
+    </header>
+    <main>
+        
         <!-- show only on medium and up -->
         <section class="joinLg">
             <h2>Turn your job into a profession, join IPSSA, San Diego</h2>
@@ -117,7 +130,7 @@
     </main>
       
     <footer>
-        <img src="images/ipssa-logo11.png" alt="logo" class="logo">
+        <img src="images/ipssa-logo11.png" alt="logo" class="footerLogo">
         <div class="info">
             <h4>IPSSA, San Diego Chapter</h4>
             <p>Mark Curran, President</p>
@@ -134,5 +147,6 @@
         </div>
         <p id="copy">Copyright 2002-2020. All Rights Reserved.</p>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
