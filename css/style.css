@@ -191,6 +191,15 @@ img {
     background-color: #eaf4ff;
 }
 
+/*  11. Title Bar style for all pages  */
+.titleBar {
+    background-color: #eaf4ff;
+    padding: 1em;
+}
+.titleBar h1{
+    text-align: center;
+}
+
 /* 4. cta styles */
 #cta {
     background: #eaf4ff;
@@ -419,14 +428,7 @@ a.blueBtn {
 
 /* Members page */
 
-/*  11. Title Bar style for all pages  */
-.titleBar {
-    background-color: #eaf4ff;
-    padding: 1em;
-}
-.titleBar h1{
-    text-align: center;
-}
+
 
 /*  Navigation bar */
 @media all and (min-width: 960px){
