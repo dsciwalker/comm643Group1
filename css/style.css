@@ -71,6 +71,7 @@ article, aside, figure, footer, header, nav, main, section, video, audio {
 
 body {
     font-family: usual, sans-serif;
+    /* font-size: 10px; */
     font-weight: 400;
     font-style: normal;
     color: #3b3b3b;
@@ -131,102 +132,65 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/*  Responsive Navigation bar */
 .logo {
-    width: 45px;
+    font-size: 1.3em;
+    padding: 15px 0 10px 40px;
+    /* padding: 10px; */
+}
+.logo a img {
+    max-height: 110px;
 }
 
-/* 2. header styles */
-header .logo {
-    padding: 1em 0;
-    margin-left: 40px;
-    width: 40px;
-}
-
-/* 3. nav styles */
-/* 3. nav styles */
-nav ul {
+.navbar, .subNav {
     list-style-type: none;
-    text-align: left;
+    /* margin: 0; */
+    /* padding: 0; */
 }
-
-nav ul li {
-    border-bottom: solid 1px #eaf4ff;
-    padding: .5em 2em;
-    position: relative;
+.subNav {
+    display: none;
+    padding-left: 10px;
 }
-
-nav li a {
-    display: inline-block;
-    text-decoration: none;
-    padding: .5em;
-    color: #1d4c7f;
+.sactive .subNav {
+    display: block;
 }
-
-#nav nav ul ul {
+.sactive {
     background-color: #eaf4ff;
-    position: absolute;
+}
+.navbar  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItem {
+    border-bottom: solid 1px #eaf4ff;
+    padding: 10px;
+    /* text-align: center; */
+    text-align: left;
+    width: 100%;
     display: none;
+    order: 3;
 }
-
-nav ul li:last-child {
-    display: none;
-}
-
-#nav nav ul li a:hover {
-        font-weight: 600;
-}
-
-/* dropdown submenu */
-    
-#nav nav ul li a:hover ul {
-    display: block;
-}
-
-#nav nav ul li ul li {
-    border-bottom: solid 1px #1d4c7f;
-}
-
-#nav nav {
-    height: 0;
-    overflow: hidden;
-    margin-top: -2em;
-}
-/* ---advanced checkbox hack--- */
-body {
-    -webkit-animation: bugfix infinite is;
-}
-@-webkit-keyframes bugfix {
-    from {padding: 0}
-    to {padding: 0}
-}
-/* ---end advanced checkbox hack--- */
-
-#nav input[type=checkbox] {
-    position: absolute;
-    top: -999em;
-    left: -999em;
-}
-
-
-#nav label {
-    display: block;
-    background: url(../images/menuBtn.png) no-repeat right center;
-    text-indent: -999em;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
+.toggle {
     font-size: 2em;
-    top: -2.2em;
-    right: 2em;
+    padding: 40px;
+    /* padding: 8px; */
+    order: 1;
+}
+.active .navItem {
+    display: block;
+}
+.navItem a {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.navItem a:hover {
+    background-color: #eaf4ff;
 }
 
-#nav input[type=checkbox]:checked ~ nav {
-    height: auto;
-    overflow: hidden;
-}
 /* 4. cta styles */
 #cta {
     background: #eaf4ff;
@@ -257,6 +221,7 @@ body {
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
     background-size: cover;
+    background-position: 50% 34%;
     height: 100%;
     text-align: center;
 }
@@ -326,7 +291,9 @@ footer {
 footer p {
     padding: 0;
 }
-
+.footerLogo {
+    width: 45px;
+}
 .info p:first-of-type, .info p:nth-of-type(4) {
     padding-top: .6em;
 }
@@ -372,67 +339,18 @@ a.blueBtn {
 
 /* 10. media query */
 @media screen and (min-width: 615px) {
-/* general */
-    body {
+     /* general */
+     body {
         font-size: 16px;
     }
-/* header */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    header img.logo {
-        width: 80px;
-        height: auto;
-    }
-
-/* nav */
+    /* nav */
     .join h2 {
         font-size: 1em;
         width: 60%;
         text-align: center;
     }
     
-    nav a {
-        font-size: 0.7em;
-    }
-    
-    nav ul {
-        text-align: left;
-        padding: .5em 0;
-        margin-top: 5em;
-        margin-right: 1em;
-    }
-    
-    #nav nav ul li:last-child {
-    display: none;
-    }
-   
-/* disable toggle menu */
-    #nav {
-        padding: 0;
-        margin-top: 1.5em;
-    }
-    #nav label {
-        display: none;
-    }
-    #nav nav {
-        height: auto;
-        overflow: visible;
-    }
-    #nav li {
-        display: inline-block;
-        border: 0;
-        padding: .3em;
-    }
-    #nav a {
-        display: inline-block;
-    }
-    
-    
-/* home */
+    /* home */
     .flexContainer {
         display: flex;
         flex-direction: column;
@@ -461,9 +379,9 @@ a.blueBtn {
         display: inherit;
     }
 /* nav */    
-    #nav nav ul li:last-child {
+    /* #nav nav ul li:last-child {
     display: inline-block;
-    }
+    } */
 }
 
 @media screen and (min-width: 800px) {
@@ -508,4 +426,55 @@ a.blueBtn {
 }
 .titleBar h1{
     text-align: center;
+}
+
+/*  Navigation bar */
+@media all and (min-width: 960px){
+    #hero {
+        background: url(../images/hero-medium.jpeg) no-repeat center;
+        background-position: 57% 54%;
+        height: 40vh;
+    }
+    nav {
+        margin: 0 25px;
+    }
+    .navItem{
+        position: relative;
+        display: block;
+        width: auto;
+        order: 1;
+        min-width:110px;
+        border: none;
+    }
+    /* check if you need it */
+    .sactive .subNav {
+        display: block;
+    }
+    .navbar{
+        /* align-items: flex-start; aligns nav items  ..its goint to top change it later */
+        align-items: flex-end;
+        flex-wrap: nowrap;
+    }
+    .sactive .subNav {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 58px;
+        /* background-color: #fff; */
+        background: rgba(255,255,255, 0.8);
+        min-width:120px;
+        text-align: left;
+    }
+    .subNav a:hover {
+        background-color: #eaf4ff;
+    }
+    .toggle {
+        display: none;
+        flex: 1;
+        text-align: right;
+    }
+    .logo {
+        flex: 1;
+        order: 0;
+    }
 }
