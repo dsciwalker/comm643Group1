@@ -140,7 +140,7 @@ img {
     /* padding: 10px; */
 }
 .logo a img {
-    max-height: 110px;
+    max-height: 90px;
 }
 
 .navbar, .subNav {
@@ -437,6 +437,9 @@ a.blueBtn {
         background: url(../images/hero-medium.jpeg) no-repeat center;
         background-position: 57% 54%;
         height: 40vh;
+    }
+    .logo a img {
+        max-height: 110px;
     }
     nav {
         margin: 0 25px;
