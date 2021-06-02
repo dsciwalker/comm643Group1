@@ -133,13 +133,10 @@ img {
 }
 
 /*  Responsive Navigation bar */
-nav {
-    margin: 0 35px;
-}
 .logo {
     font-size: 1.3em;
-    /* padding: 15px 0 10px 40px; */
-    padding: 10px;
+    padding: 15px 0 10px 40px;
+    /* padding: 10px; */
 }
 .logo a img {
     max-height: 110px;
@@ -177,8 +174,8 @@ nav {
 }
 .toggle {
     font-size: 2em;
-    /* padding: 40px; */
-    padding: 8px;
+    padding: 40px;
+    /* padding: 8px; */
     order: 1;
 }
 .active .navItem {
@@ -578,7 +575,9 @@ a.blueBtn {
         background-position: 57% 54%;
         height: 40vh;
     }
-
+    nav {
+        margin: 0 25px;
+    }
     .navItem{
         position: relative;
         display: block;
