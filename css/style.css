@@ -71,6 +71,7 @@ article, aside, figure, footer, header, nav, main, section, video, audio {
 
 body {
     font-family: usual, sans-serif;
+    /* font-size: 10px; */
     font-weight: 400;
     font-style: normal;
     color: #3b3b3b;
@@ -190,98 +191,6 @@ img {
     background-color: #eaf4ff;
 }
 
-/* 2. header styles */
-/* header .logo {
-    padding: 1em 0;
-    margin-left: 40px;
-    width: 40px;
-} */
-
-/* 3. nav styles */
-/* 3. nav styles */
-/* nav ul {
-    list-style-type: none;
-    text-align: left;
-}
-
-nav ul li {
-    border-bottom: solid 1px #eaf4ff;
-    padding: .5em 2em;
-    position: relative;
-}
-
-nav li a {
-    display: inline-block;
-    text-decoration: none;
-    padding: .5em;
-    color: #1d4c7f;
-}
-
-#nav nav ul ul {
-    background-color: #eaf4ff;
-    position: absolute;
-    display: none;
-}
-
-nav ul li:last-child {
-    display: none;
-}
-
-#nav nav ul li a:hover {
-        font-weight: 600;
-} */
-
-/* dropdown submenu */
-    
-/* #nav nav ul li a:hover ul {
-    display: block;
-}
-
-#nav nav ul li ul li {
-    border-bottom: solid 1px #1d4c7f;
-}
-
-#nav nav {
-    height: 0;
-    overflow: hidden;
-    margin-top: -2em;
-} */
-/* ---advanced checkbox hack--- */
-/* body {
-    -webkit-animation: bugfix infinite is;
-}
-@-webkit-keyframes bugfix {
-    from {padding: 0}
-    to {padding: 0}
-} */
-/* ---end advanced checkbox hack--- */
-
-/* #nav input[type=checkbox] {
-    position: absolute;
-    top: -999em;
-    left: -999em;
-} */
-
-
-/* #nav label {
-    display: block;
-    background: url(../images/menuBtn.png) no-repeat right center;
-    text-indent: -999em;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
-    font-size: 2em;
-    top: -2.2em;
-    right: 2em;
-}
-
-#nav input[type=checkbox]:checked ~ nav {
-    height: auto;
-    overflow: hidden;
-} */
 /* 4. cta styles */
 #cta {
     background: #eaf4ff;
@@ -430,65 +339,16 @@ a.blueBtn {
 
 /* 10. media query */
 @media screen and (min-width: 615px) {
-/* general */
-    body {
+     /* general */
+     body {
         font-size: 16px;
     }
-/* header */
-    /* header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    header img.logo {
-        width: 80px;
-        height: auto;
-    } */
-
-/* nav */
+    /* nav */
     .join h2 {
         font-size: 1em;
         width: 60%;
         text-align: center;
     }
-    
-    /* nav a {
-        font-size: 0.7em;
-    }
-    
-    nav ul {
-        text-align: left;
-        padding: .5em 0;
-        margin-top: 5em;
-        margin-right: 1em;
-    }
-    
-    #nav nav ul li:last-child {
-    display: none;
-    } */
-   
-/* disable toggle menu */
-    /* #nav {
-        padding: 0;
-        margin-top: 1.5em;
-    }
-    #nav label {
-        display: none;
-    }
-    #nav nav {
-        height: auto;
-        overflow: visible;
-    }
-    #nav li {
-        display: inline-block;
-        border: 0;
-        padding: .3em;
-    }
-    #nav a {
-        display: inline-block;
-    } */
-    
     
     /* home */
     .flexContainer {
