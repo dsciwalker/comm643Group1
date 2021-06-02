@@ -242,6 +242,7 @@ img {
 
 #hero h1 {
     margin: 0;
+    text-shadow: 0 0 8px #fff;
 }
 
 #hero h1:first-child {
