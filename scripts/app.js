@@ -7,12 +7,13 @@ navItems.forEach((item) => {
     console.log(item);
     if(item.querySelector('.subNav')){
         item.addEventListener('click', (e) =>{
+            // item.classList.toggle('sactive');
             if(item.classList.contains('sactive')){
-                item.classList.remove('sactive');
-            } else {
+                 item.classList.remove('sactive');
+            }else {
                 item.classList.add('sactive');
-            }   
-        })
+             }   
+        });
     }
 });
 
@@ -24,4 +25,4 @@ toggler.addEventListener('click', (e) => {
         navbar.classList.add('active');    
         toggler.querySelector('a').innerHTML = '<i class="fas fa-times-circle"></i>';
     }
-})
+});
