@@ -184,8 +184,10 @@ img {
 }
 .navItem a {
     display: block;
-    padding: 10px 5px;
+    padding: 5px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: .875em;
 }
 .navItem a:hover {
     background-color: #eaf4ff;
@@ -237,12 +239,13 @@ img {
 
 #hero p {
     color: #fff;
-    padding: 0 6em;
+    padding: 0 2em;
 }
 
 #hero h1 {
     margin: 0;
     text-shadow: 0 0 8px #fff;
+    padding: 0 1em;
 }
 
 #hero h1:first-child {
@@ -260,7 +263,7 @@ img {
 
 /* 6. saveLife section styles */
 .saveLife {
-    padding: 1em 6em 1.5em;
+    padding: 1em 2em 1.5em;
 }
 
 .saveLife a {
@@ -283,7 +286,7 @@ img {
     display: block;
     background-color: #eaf4ff;
     padding: 1em 2em 2em;
-    margin: 3em 5em;
+    margin: 3em 2em;
 }
 
 #awards article:last-child p:first-child {
@@ -292,30 +295,49 @@ img {
 
 /* 8. footer styles */
 footer {
-    padding: 3em;
+    padding: 2em 1em;
     text-align: center;
     background-color: #eaf4ff;
     color: #1d4c7f;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
-
-footer p {
-    padding: 0;
+.fItem {
+    margin: 5px 5px;
 }
 .footerLogo {
-    width: 45px;
+    max-width: 90px;
 }
-.info p:first-of-type, .info p:nth-of-type(4) {
+footer p {
+    padding: 0;
+    font-size: .8em;
+}
+footer h4 {
+    font-weight: bold;
+}
+#contactInfo p:first-of-type, #contactInfo p:nth-of-type(4) {
     padding-top: .6em;
 }
-
-#social {
+#social p:first-of-type {
     padding-top: 1em;
 }
+#social a{
+    font-size: 25px;
+    padding:5px;
+    margin-top: 10px;
+}
+.copyright {
+    font-size: .7em;
+}
+/* #social {
+    padding-top: 1em;
+} */
 
-#copy {
+/* #copy {
     margin: 1.5em 0;
     font-size: .6em;
-}
+} */
 
 
 /* 9. button styles */
@@ -388,26 +410,31 @@ a.blueBtn {
     .joinLg {
         display: inherit;
     }
-/* nav */    
-    /* #nav nav ul li:last-child {
-    display: inline-block;
-    } */
-}
-
-@media screen and (min-width: 800px) {
-/* home */    
-     #awards {
+    #awards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .5em;
-        padding: 5em;
+        padding: 2em;
     }
     
     #awards article {
         padding: 1em 2em 2em;
         margin: 3em 0;
     }
-    
+/* nav */    
+    /* #nav nav ul li:last-child {
+    display: inline-block;
+    } */
+
+    /* Footer styles */
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 800px) {
+/* home */    
     .joinLg img {
         max-width: 410px;
         height: auto;
@@ -444,6 +471,7 @@ a.blueBtn {
     nav {
         margin: 0 25px;
     }
+
     .navItem{
         position: relative;
         display: block;
