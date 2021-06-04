@@ -281,6 +281,13 @@ img {
 .saveLife a img {
     padding-top: .5em;
 }
+div.wwTag a {
+    display: inline;
+}
+img.wwTag {
+    max-width: 500px;
+    width: 80%;
+}
 
 /* 7. awards section styles */
 #awards {
