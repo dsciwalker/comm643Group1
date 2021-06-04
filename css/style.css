@@ -150,7 +150,14 @@ img {
 }
 .subNav {
     display: none;
-    padding-left: 10px;
+    padding-left: 2px;
+    font-size: .875em;
+}
+.subNav li:not(:last-of-type) {
+    border-bottom: solid 1px #fff; 
+}
+.subNav li:first-of-type {
+    border-top: solid 1px #fff;
 }
 .sactive .subNav {
     display: block;
@@ -166,7 +173,7 @@ img {
 }
 .navItem {
     border-bottom: solid 1px #eaf4ff;
-    padding: 10px 15px;
+    padding: 5px 15px;
     /* text-align: center; */
     text-align: left;
     width: 100%;
@@ -184,7 +191,7 @@ img {
 }
 .navItem a {
     display: block;
-    padding: 5px;
+    padding: 10px 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: .875em;
@@ -493,14 +500,17 @@ a.blueBtn {
         display: block;
         position: absolute;
         left: 0;
-        top: 58px;
+        top: 46px;
         /* background-color: #fff; */
-        background: rgba(255,255,255, 0.8);
+        background: rgba(255,255,255, 1);
         min-width:120px;
         text-align: left;
     }
     .subNav a:hover {
         background-color: #eaf4ff;
+    }
+    .subNav li:not(:last-of-type) { 
+        border-bottom: solid 1px #eaf4ff;
     }
     .toggle {
         display: none;
