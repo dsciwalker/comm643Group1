@@ -46,6 +46,7 @@ span.ww {
     padding-top: 25px;
     height: 0;
     overflow: hidden;
+    margin: 0 25px;
 }
 
 .video iframe {
@@ -147,7 +148,9 @@ img.svg {
     div.wwTag {
         margin: 0 2em;
     }
-    
+    .video{
+        margin: 0 50px;
+    }
     .test p {
     font-size: 1em;
     }
