@@ -98,7 +98,7 @@ h4 {
 }
 
 p {
-    /* padding: .5em 0; */
+    padding: .5em 0;
     line-height: 1.4em;
 }
 
@@ -537,8 +537,12 @@ img.svg {
 #boardMeeting, #meetingInfo {
     border-top: solid 2px #eaf4ff;
 }
+
 .address, .note {
     margin-top: 1em;
+}
+.address p{
+    padding: 0;
 }
 .note p{
     color: #707070;
