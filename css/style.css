@@ -325,7 +325,6 @@ footer h4 {
     font-size: .7em;
 }
 
-
 /*  8. Button styles */
 a.whiteBtn {
     display: inline-block;
@@ -355,7 +354,37 @@ a.blueBtn {
     text-align: center;
 }
 
+/* Who We Are page styles */
+/* Contact Us page styles */
 
+/* Services page styles */
+.twoCol {
+    margin: 1em 2em;
+    padding-bottom: 4em;
+}
+
+.twoCol p {
+    line-height: 1.3em;
+    padding-bottom: 1em;
+}
+
+#serArt {
+    margin: 1em 0;
+    padding: 2em 0;
+    border-top: solid 2px #eaf4ff;
+}
+
+#serArt article {
+    display: block;
+    background-color: #eaf4ff;
+    padding: 1em 2em 2em;
+    margin: 3em 2em;
+}
+
+/* Safety-Water Safety page styles */
+/* Members-Login page styles */
+/* Members-meetings page styles */
+/* Join(members.html) page styles */
 
 /* 10. Media Query: 615px and above */
 @media screen and (min-width: 615px) {
@@ -390,7 +419,7 @@ a.blueBtn {
 }
 
 @media screen and (min-width: 700px) {
-/* home */
+    /* home */
     #cta {
         display: none;
     }
@@ -418,6 +447,25 @@ a.blueBtn {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    /* Services page styles */
+    #serArt {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        padding:  2em 2em 3em;
+    }
+    
+    #serArt article {
+        padding: 1em 2em 2em;
+        margin: 3em 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #serArt article p {
+        height: 11em;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -435,6 +483,25 @@ a.blueBtn {
     .colRt {
         margin: auto;
         padding: 0 3em 0 1em;
+    }
+    /* Services page styles */
+    .twoCol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .twoCol h2 {
+        grid-column: span 2;
+    }
+    
+    .twoCol p {
+        order: 2;
+        padding: 0 0 0 1em;
+        align-self: center;
+    }
+    
+    #serArt article p {
+        height: 9em;
     }
 }
 
@@ -491,5 +558,10 @@ a.blueBtn {
     .logo {
         flex: 1;
         order: 0;
+    }
+
+    /* Services page styles */
+    #serArt article p {
+        height: 8em;
     }
 }
