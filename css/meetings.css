@@ -38,7 +38,7 @@ p{
     padding: 0 2em 2em 2em;
 }
 #boardMeeting, #meetingInfo {
-    border-top: solid 1px #eaf4ff;
+    border-top: solid 2px #eaf4ff;
 }
 .address, .note {
     margin-top: 1em;
