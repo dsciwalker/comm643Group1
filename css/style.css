@@ -1,64 +1,44 @@
-/*
---- fonts ---
-font-family: usual, sans-serif;
-font-weight: 400;
-font-style: normal;
+/**
+--- FONTS ---
+font-family: usual, sans-serif, 400, normal;
+font-family: usual, sans-serif, 400, italic;
+font-family: usual, sans-serif, 600, normal;
+font-family: usual, sans-serif, 700, normal;
+font-family: minion-pro, serif, 400, normal;
+font-family: minion-pro-caption, serif, 500, normal;
+font-family: minion-pro-caption, serif, 600, normal;
 
--italic-
-font-family: usual, sans-serif;
-font-weight: 400;
-font-style: italic;
-
--medium-
-font-family: usual, sans-serif;
-font-weight: 600;
-font-style: normal;
-
--bold-
-font-family: usual, sans-serif;
-font-weight: 700;
-font-style: normal;
-
--------
-font-family: minion-pro, serif;
-font-weight: 400;
-font-style: normal;
-
--medium-
-font-family: minion-pro-caption, serif;
-font-weight: 500;
-font-style: normal;
-
--semibold-
-font-family: minion-pro-caption, serif;
-font-weight: 600;
-font-style: normal;
-
---- color ---
+--- COLORS ---
 darkblue: #1d4c7f;
 paleblue: #eaf4ff;
 dark grey: #3b3b3b;
 grey: #707070;
 orange: #ff5f1f;
 
---- table of contents ---
-1. general styles
-2. header styles
-3. nav styles
-4. cta styles
-5. hero styles
-6. waterWatcher section styles
-7. awards section styles
-8. footer styles
-9. button styles
-10. media query
+--- TABLE OF CONTENTS ---
+1. General styles
+    1.1 Responsive image
+2. cta - Join ipssa section styles
+3. Responsive Navigation bar
+4. Hero styles
+5. SaveLife(Water watcher) section styles
+6. Awards and Events section styles
+7. Footer styles
+8. Button styles
+9. Title Bar style for all pages
+10. Media Query: 615px and above 
+@media screen and (min-width: 615px)
+@media screen and (min-width: 700px)
+@media screen and (min-width: 800px)
+@media all and (min-width: 960px)
 
 
-*/
+**/
 
-/* 1. general styles */
+/* Adobe Font kit */
 @import url("https://use.typekit.net/mom4myj.css");
 
+/* 1. General styles */
 article, aside, figure, footer, header, nav, main, section, video, audio {
     display: block;
 }
@@ -71,7 +51,6 @@ article, aside, figure, footer, header, nav, main, section, video, audio {
 
 body {
     font-family: usual, sans-serif;
-    /* font-size: 10px; */
     font-weight: 400;
     font-style: normal;
     color: #3b3b3b;
@@ -126,90 +105,19 @@ p {
 a {
     color: #1d4c7f;
 }
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
-/* Responsive image */
+/* 1.1 Responsive image */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/*  Responsive Navigation bar */
-.logo {
-    font-size: 1.3em;
-    padding: 15px 0 10px 40px;
-    /* padding: 10px; */
-}
-.logo a img {
-    max-height: 90px;
-}
-
-.navbar, .subNav {
-    list-style-type: none;
-    /* margin: 0; */
-    /* padding: 0; */
-}
-.subNav {
-    display: none;
-    padding-left: 2px;
-    font-size: .875em;
-}
-.subNav li:not(:last-of-type) {
-    border-bottom: solid 1px #fff; 
-}
-.subNav li:first-of-type {
-    border-top: solid 1px #fff;
-}
-.sactive .subNav {
-    display: block;
-}
-.sactive {
-    background-color: #eaf4ff;
-}
-.navbar  {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.navItem {
-    border-bottom: solid 1px #eaf4ff;
-    padding: 5px 15px;
-    /* text-align: center; */
-    text-align: left;
-    width: 100%;
-    display: none;
-    order: 3;
-}
-.toggle {
-    font-size: 2em;
-    padding: 40px;
-    /* padding: 8px; */
-    order: 1;
-}
-.active .navItem {
-    display: block;
-}
-.navItem a {
-    display: block;
-    padding: 10px 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .875em;
-}
-.navItem a:hover {
-    background-color: #eaf4ff;
-}
-
-/*  11. Title Bar style for all pages  */
-.titleBar {
-    background-color: #eaf4ff;
-    padding: 1em;
-}
-.titleBar h1{
-    text-align: center;
-}
-
-/* 4. cta styles */
+/*  2. cta - Join ipssa section styles */
 #cta {
     background: #eaf4ff;
     display: flex;
@@ -234,8 +142,80 @@ img {
     display: none;
 }
 
+/*  3. Responsive Navigation bar */
+.logo {
+    font-size: 1.3em;
+    padding: 15px 0 10px 40px;
+}
 
-/* 5. hero styles */
+.logo a img {
+    max-height: 90px;
+}
+
+.navbar, .subNav {
+    list-style-type: none;
+}
+
+.subNav {
+    display: none;
+    padding-left: 2px;
+    font-size: .875em;
+}
+
+.subNav li:not(:last-of-type) {
+    border-bottom: solid 1px #fff; 
+}
+
+.subNav li:first-of-type {
+    border-top: solid 1px #fff;
+}
+
+.sactive .subNav {
+    display: block;
+}
+
+.sactive {
+    background-color: #eaf4ff;
+}
+
+.navbar  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navItem {
+    border-bottom: solid 1px #eaf4ff;
+    padding: 5px 15px;
+    text-align: left;
+    width: 100%;
+    display: none;
+    order: 3;
+}
+
+.toggle {
+    font-size: 2em;
+    padding: 40px;
+    order: 1;
+}
+.active .navItem {
+    display: block;
+}
+
+.navItem a {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .875em;
+}
+
+.navItem a:hover {
+    background-color: #eaf4ff;
+}
+
+/* 4. Hero styles */
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
     background-size: cover;
@@ -268,7 +248,7 @@ img {
     margin-bottom: 3em;
 }
 
-/* 6. saveLife section styles */
+/* 5. SaveLife(Water watcher) section styles */
 .saveLife {
     padding: 1em 2em 1.5em;
 }
@@ -289,7 +269,7 @@ img.wwTag {
     width: 80%;
 }
 
-/* 7. awards section styles */
+/* 6. Awards and Events section styles */
 #awards {
     margin: 1em 0;
     padding: 2em 0;
@@ -307,7 +287,7 @@ img.wwTag {
     padding-top: 2em;
 }
 
-/* 8. footer styles */
+/* 7. Footer styles */
 footer {
     padding: 2em 1em;
     text-align: center;
@@ -344,17 +324,9 @@ footer h4 {
 .copyright {
     font-size: .7em;
 }
-/* #social {
-    padding-top: 1em;
-} */
-
-/* #copy {
-    margin: 1.5em 0;
-    font-size: .6em;
-} */
 
 
-/* 9. button styles */
+/*  8. Button styles */
 a.whiteBtn {
     display: inline-block;
     background-color: #fff;
@@ -365,25 +337,27 @@ a.whiteBtn {
     margin: 1em;
 }
 
-/*input#submit.whiteBtn {
-    background-color: #fff;
-    color: #ff5f0d;
-    border: solid 1px #1d4c7f;
-    padding: .5em;
-}*/
-
 a.blueBtn {
     display: inline-block;
     background-color: #1d4c7f;
     color: #fff;
     padding: .5em 2em;
     text-decoration: none;
-    margin-top: 1em;
+    margin: 1em 0 .3em 0;
+}
+
+/*  9. Title Bar style for all pages  */
+.titleBar {
+    background-color: #eaf4ff;
+    padding: 1em;
+}
+.titleBar h1{
+    text-align: center;
 }
 
 
 
-/* 10. media query */
+/* 10. Media Query: 615px and above */
 @media screen and (min-width: 615px) {
      /* general */
      body {
@@ -423,7 +397,10 @@ a.blueBtn {
     
     .joinLg {
         display: inherit;
+        padding-bottom: 4em;
+        border-bottom: solid 2px #eaf4ff;
     }
+
     #awards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -435,10 +412,6 @@ a.blueBtn {
         padding: 1em 2em 2em;
         margin: 3em 0;
     }
-/* nav */    
-    /* #nav nav ul li:last-child {
-    display: inline-block;
-    } */
 
     /* Footer styles */
     footer {
@@ -448,7 +421,7 @@ a.blueBtn {
 }
 
 @media screen and (min-width: 800px) {
-/* home */    
+    /* home */    
     .joinLg img {
         max-width: 410px;
         height: auto;
@@ -465,23 +438,17 @@ a.blueBtn {
     }
 }
 
-
-/* About Us page */
-
-/* Members page */
-
-
-
-/*  Navigation bar */
 @media all and (min-width: 960px){
     #hero {
         background: url(../images/hero-medium.jpeg) no-repeat center;
         background-position: 57% 54%;
         height: 40vh;
     }
+    /*  Navigation bar */
     .logo a img {
         max-height: 110px;
     }
+
     nav {
         margin: 0 25px;
     }
@@ -491,15 +458,13 @@ a.blueBtn {
         display: block;
         width: auto;
         order: 1;
-        /* min-width:110px; */
         border: none;
     }
-    /* check if you need it */
+
     .sactive .subNav {
         display: block;
     }
     .navbar{
-        /* align-items: flex-start; aligns nav items  ..its goint to top change it later */
         align-items: flex-end;
         flex-wrap: nowrap;
     }
@@ -508,7 +473,6 @@ a.blueBtn {
         position: absolute;
         left: 0;
         top: 46px;
-        /* background-color: #fff; */
         background: rgba(255,255,255, 1);
         min-width:120px;
         text-align: left;
