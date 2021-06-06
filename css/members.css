@@ -69,6 +69,7 @@ input {
 }
 #joinBenefits ul {
     padding-left: 2em;
+    list-style-type: square;
 }
 #joinBenefits p, #joinBenefits ul li {
     text-align: left;

@@ -1,0 +1,71 @@
+section {
+    padding: 0 1.5em;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 10px;
+    /* text-align: left; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+li {
+    margin: .5em 1em 1em 0;
+}
+#logoBranding  ul li{
+    width: 120px;
+}
+
+/* Icons */
+#icons p{
+    padding: 1em 0 0 .5em;
+    text-align: left;
+}
+#icons ul li {
+    font-size: 2em;
+    color: #1d4c7f;
+}
+
+/* Colors */
+#colors li {
+    width: 120px;
+    height: 150px;
+    border: solid 1px #ccc;
+}
+#colors p{
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+#colors li.darkblue {
+    background-color: #1d4c7f;
+}
+#colors li.paleblue {
+    background-color: #eaf4ff;
+}
+#colors li.darkgrey {
+    background-color: #3b3b3b;
+}
+#colors li.grey {
+    background-color: #707070;
+}
+#colors li.orange {
+    background-color: #ff5f1f;
+}
+#colors li.paleyellow {
+    background-color: #fefcd3;
+}
+
+/* Typography */
+#typography h4 {
+    padding: .5em 0;
+}
+#typography p:nth-of-type(2) {
+    color: #707070;
+    font-size: .9em;
+    padding-bottom: 2em;
+}
+/* Button style */
