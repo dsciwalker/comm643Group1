@@ -38,7 +38,7 @@ orange: #ff5f1f;
 /* Adobe Font kit */
 @import url("https://use.typekit.net/mom4myj.css");
 
-/* 1. General styles */
+/*** 1. General styles ***/
 article, aside, figure, footer, header, nav, main, section, video, audio {
     display: block;
 }
@@ -117,7 +117,7 @@ img {
     height: auto;
 }
 
-/*  2. cta - Join ipssa section styles */
+/***  2. cta - Join ipssa section styles ***/
 #cta {
     background: #eaf4ff;
     display: flex;
@@ -142,7 +142,7 @@ img {
     display: none;
 }
 
-/*  3. Responsive Navigation bar */
+/***  3. Responsive Navigation bar ***/
 .logo {
     font-size: 1.3em;
     padding: 15px 0 10px 40px;
@@ -215,7 +215,7 @@ img {
     background-color: #eaf4ff;
 }
 
-/* 4. Hero styles */
+/*** 4. Hero styles ***/
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
     background-size: cover;
@@ -248,7 +248,7 @@ img {
     margin-bottom: 3em;
 }
 
-/* 5. SaveLife(Water watcher) section styles */
+/*** 5. SaveLife(Water watcher) section styles ***/
 .saveLife {
     padding: 1em 2em 1.5em;
 }
@@ -269,7 +269,7 @@ img.wwTag {
     width: 80%;
 }
 
-/* 6. Awards and Events section styles */
+/*** 6. Awards and Events section styles ***/
 #awards {
     margin: 1em 0;
     padding: 2em 0;
@@ -287,7 +287,7 @@ img.wwTag {
     padding-top: 2em;
 }
 
-/* 7. Footer styles */
+/*** 7. Footer styles ***/
 footer {
     padding: 2em 1em;
     text-align: center;
@@ -325,7 +325,7 @@ footer h4 {
     font-size: .7em;
 }
 
-/*  8. Button styles */
+/***  8. Button styles ***/
 a.whiteBtn {
     display: inline-block;
     background-color: #fff;
@@ -345,7 +345,7 @@ a.blueBtn {
     margin: 1em 0 .3em 0;
 }
 
-/*  9. Title Bar style for all pages  */
+/***  9. Title Bar style for all pages  ***/
 .titleBar {
     background-color: #eaf4ff;
     padding: 1em;
@@ -354,10 +354,10 @@ a.blueBtn {
     text-align: center;
 }
 
-/* Who We Are page styles */
-/* Contact Us page styles */
+/*** Who We Are page styles ***/
+/*** Contact Us page styles ***/
 
-/* Services page styles */
+/*** Services page styles ***/
 .twoCol {
     margin: 1em 2em;
     padding-bottom: 4em;
@@ -381,25 +381,151 @@ a.blueBtn {
     margin: 3em 2em;
 }
 
-/* Safety-Water Safety page styles */
-/* Members-Login page styles */
-/* Members-meetings page styles */
-/* Join(members.html) page styles */
+/*** Safety-Water Safety page styles ***/
+span.ww {
+    font-weight: 700;
+    color: #1d4c7f;
+}
 
-/* 10. Media Query: 615px and above */
+/* sect.center styles */
+.center h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ff5f1f;
+}
+
+/* sect.twoCol styles */
+.twoCol h4 {
+    font-family: usual, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.twoCol img {
+    width: 80%;
+    padding: .5em 0;
+}
+/* video styles */
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    margin: 0 25px;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ww h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: .5em;
+}
+
+.brochure img {
+    width: 80%;
+    border: solid 1px #707070;
+}
+
+#outside, #inside {
+    margin-bottom: 1.5em;
+}
+
+#outside a, #inside a {
+    display: block;
+}
+
+.wwTag {
+    margin: 0 .5em;
+}
+
+.test {
+    border: solid 1px #1d4c7f;
+    padding: .5em;
+    margin: .5em 1em;
+}
+
+.test p {
+    font-size: .8em;
+    font-style: italic;
+}
+
+.learn p:first-child {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.learn p a.whiteBtn {
+    margin: 1em 4em;
+}
+
+.learn p:nth-child(2) a, .learn p:last-child a {
+    display: block;
+}
+
+/* sect.fact styles */
+#fact {
+    margin: 1.5em 0;
+    border-top: solid 2px #eaf4ff;
+}
+
+#truths {
+    margin: .5em 0;
+    padding: 2em 0;
+}
+
+.five {
+    display: block;
+    background-color: #fefcd3;
+    width: 80%;
+    padding: 1em 2em 2em;
+    margin: 2em auto 0;
+}
+
+.five ul {
+    text-align: left;
+}
+
+.five ul li {
+    padding-bottom: .5em;
+}
+
+img.svg {
+    width: 3em;
+    height: auto;
+    padding-top: 1em;
+}
+
+#truths h3 {
+    padding: .5em 0 .5em;
+}
+
+/*** Members-Login page styles ***/
+/*** Members-meetings page styles ***/
+/*** Join(members.html) page styles ***/
+
+/*** 10. Media Query: 615px and above ***/
 @media screen and (min-width: 615px) {
-     /* general */
+     /*** general ***/
      body {
         font-size: 16px;
     }
-    /* nav */
+    /*** nav ***/
     .join h2 {
         font-size: 1em;
         width: 60%;
         text-align: center;
     }
     
-    /* home */
+    /*** home ***/
     .flexContainer {
         display: flex;
         flex-direction: column;
@@ -416,10 +542,32 @@ a.blueBtn {
         margin: auto;
         padding: 1.5em 3em 0 3em;
     }
+    /*** Safety-Water Safety page styles ***/
+    div.wwTag {
+        margin: 0 2em;
+    }
+    .video{
+        margin: 0 50px;
+    }
+    .test p {
+    font-size: 1em;
+    }
+    
+    .learn p a.whiteBtn {
+    margin: 1em;
+    }
+
+    .learn p:nth-child(2) a, .learn p:last-child a {
+        display: inline;
+    }
+    
+    .five {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 700px) {
-    /* home */
+    /*** home ***/
     #cta {
         display: none;
     }
@@ -442,13 +590,13 @@ a.blueBtn {
         margin: 3em 0;
     }
 
-    /* Footer styles */
+    /*** Footer styles ***/
     footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    /* Services page styles */
+    /*** Services page styles ***/
     #serArt {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -469,7 +617,7 @@ a.blueBtn {
 }
 
 @media screen and (min-width: 800px) {
-    /* home */    
+    /*** home ***/    
     .joinLg img {
         max-width: 410px;
         height: auto;
@@ -484,7 +632,7 @@ a.blueBtn {
         margin: auto;
         padding: 0 3em 0 1em;
     }
-    /* Services page styles */
+    /*** Services page styles ***/
     .twoCol {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -503,6 +651,8 @@ a.blueBtn {
     #serArt article p {
         height: 9em;
     }
+    /*** Safety-Water Safety page styles ***/
+    
 }
 
 @media all and (min-width: 960px){
@@ -511,7 +661,7 @@ a.blueBtn {
         background-position: 57% 54%;
         height: 40vh;
     }
-    /*  Navigation bar */
+    /***  Navigation bar ***/
     .logo a img {
         max-height: 110px;
     }
@@ -560,7 +710,7 @@ a.blueBtn {
         order: 0;
     }
 
-    /* Services page styles */
+    /*** Services page styles ***/
     #serArt article p {
         height: 8em;
     }
