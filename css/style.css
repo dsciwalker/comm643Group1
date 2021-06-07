@@ -217,7 +217,12 @@ img {
 .navItem a:hover {
     background-color: #eaf4ff;
 }
-
+.navItem .navJoinBtn:hover {
+    color: #1d4c7f;
+    background-color: #eaf4ff;
+    border: solid 1px #1d4c7f;
+    font-size: .875em;
+}
 /*** 4. Hero styles ***/
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
@@ -346,6 +351,13 @@ a.blueBtn {
     padding: .5em 2em;
     text-decoration: none;
     margin: 1em 0 .3em 0;
+}
+
+a.blueBtn:hover {
+    color: #1d4c7f;
+    background-color: #eaf4ff;
+    border: solid 1px #1d4c7f;
+    font-size: 1em;
 }
 
 /***  9. Title Bar style for all pages  ***/
