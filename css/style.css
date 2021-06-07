@@ -410,15 +410,18 @@ span.ww {
 }
 
 /* sect.twoCol styles */
-.twoCol h4 {
+.stwoCol h4 {
     font-family: usual, sans-serif;
     font-size: 1em;
     font-weight: 700;
 }
 
-.twoCol img {
+.stwoCol img {
     width: 80%;
     padding: .5em 0;
+}
+.stwoCol {
+    margin: 0 1.5em;
 }
 /* video styles */
 .video {
@@ -444,7 +447,10 @@ span.ww {
     font-weight: 600;
     padding-bottom: .5em;
 }
-
+.waterSafetyP{
+    border-bottom: solid 2px #eaf4ff;
+    padding-bottom: 2em;
+}
 .brochure img {
     width: 80%;
     border: solid 1px #707070;
@@ -488,7 +494,7 @@ span.ww {
 
 /* sect.fact styles */
 #fact {
-    margin: 1.5em 0;
+    padding: 1.5em;
     border-top: solid 2px #eaf4ff;
 }
 
@@ -856,7 +862,36 @@ input {
         height: 9em;
     }
     /*** Safety-Water Safety page styles ***/
+    .stwoCol {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        align-items: center;
+        padding: 0 1em;
+    }
     
+    .stwoCol img {
+        order: -1;
+        grid-row: span 2;
+        width: 100%;
+        padding-right: 1em;
+    }
+    .brochure {
+        display: flex;
+        justify-content: space-around;
+    }
+    #outside, #inside {
+        width: 45%;
+    }
+    #truths {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .five {
+        width: 28%;
+        margin: 2em 1em 0;
+    }
 }
 
 @media all and (min-width: 960px){
