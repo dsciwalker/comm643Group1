@@ -141,6 +141,9 @@ img {
 .joinLg {
     display: none;
 }
+.loginHere {
+    font-size: .9em;
+}
 
 /***  3. Responsive Navigation bar ***/
 .logo {
