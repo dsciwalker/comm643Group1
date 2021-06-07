@@ -639,10 +639,10 @@ input {
 /* 10. Media Query: Mid screen layout style - Join(members.html) page styles */
 @media screen and (min-width: 525px) {
     /* Form styles */
-    label {
+    #joinForm label {
         display: inline-block;
     }
-    input {
+    #joinForm input {
         width: 250px;
     }
 }
@@ -802,7 +802,7 @@ input {
 }
 /* 6. Media Query: large screen layout style - Join(members.html) page styles */
 @media screen and (min-width: 750px) {
-    form {
+    #joinForm {
         width: 80%;
         margin: auto;
     }
