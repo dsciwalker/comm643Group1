@@ -20,7 +20,7 @@ li {
 }
 
 /* Icons */
-#icons p{
+#icons p, #navigationBar p, #lists p{
     padding: 1em 0 0 .5em;
     text-align: left;
 }
@@ -75,4 +75,33 @@ li {
     display: block;
     text-align: left;
     padding-left: 30px;
+}
+
+/* Navigation */
+#navigationBar nav {
+    margin-left: -20px;
+    max-width: 950px;
+}
+#navigationBar .navItem {
+    padding: 0;
+}
+
+/* Footer  */
+#footerBottom footer {
+    margin: 2em 1em;
+}
+
+/* Image used */
+.styleGuideImageGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.styleGuideImageGallery img {
+    max-width: 300px;
+    height: auto;
+    margin: .5em;
+}
+.styleGuideImageGallery .svgIcon{
+    max-width: 100px;
 }

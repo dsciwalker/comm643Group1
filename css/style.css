@@ -659,6 +659,24 @@ input {
     text-align: left;
 }
 
+/*** About us - Who we are page styles ***/
+.aboutIpssa p {
+    text-align: left;
+}
+.aboutIpssaList ul{
+    list-style-type: square;
+    text-align: left;
+    padding-left: 2em;
+}
+#missionIpssa h2 {
+    text-align: left;
+    padding: 1em 0 .5em 0;
+}
+#missionIpssa {
+    padding-bottom: 5em;
+}
+/*** About us - Who we are page styles - END ***/
+
 /* 10. Media Query: Mid screen layout style - Join(members.html) page styles */
 @media screen and (min-width: 525px) {
     /* Form styles */
