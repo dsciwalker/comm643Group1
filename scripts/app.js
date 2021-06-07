@@ -3,6 +3,7 @@ const navbar = document.querySelector('.navbar');
 const navItems = document.querySelectorAll('.navItem');
 console.log(navItems);
 
+//display submenu when one of the navigation menus is 'clicked'
 navItems.forEach((item) => {
     console.log(item);
     if(item.querySelector('.subNav')){
@@ -10,6 +11,7 @@ navItems.forEach((item) => {
             if(item.classList.contains('sactive')){
                 item.classList.remove('sactive');
             }else if (navbar.querySelector('.sactive')) {
+                //if there are any other submenu already open, close it
                 navbar.querySelector('.sactive').classList.remove('sactive');
                 item.classList.add('sactive');
             }else {
@@ -19,6 +21,7 @@ navItems.forEach((item) => {
     }
 });
 
+//display menu when the bars icon on navigation is 'clicked'
 toggler.addEventListener('click', (e) => {
     if(navbar.classList.contains('active')){
         navbar.classList.remove('active');
