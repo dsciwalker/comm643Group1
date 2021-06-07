@@ -7,36 +7,36 @@ grey: #707070;
 orange: #ff5f1f;
 */
 
-main {
+/* main {
     margin: 0 auto;
-}
-
-fieldset {
+} */
+/* 
+#mainContactForm fieldset {
     text-align: left;
     background-color: #eaf4ff;
     border: solid 1px #1d4c7f;
     margin: 1.5em;
-}
+} */
 
-ul li {
+/* ul li {
     list-style: none;
-}
+} */
 
-form {
+/* form {
     font-family: usual, sans-serif;
-}
+} */
 
-legend {
+/* legend {
     font-family: minion-pro-caption, serif;
     font-weight: 600;
     font-size: 1.5em;
     padding: 0 .3em 0 .2em;
     color: #1d4c7f;
-}
+} */
 
-input, select {
+/* input, select {
     padding-left: .25em;
-}
+} */
 
 fieldset p {
     font-size: 1em;
