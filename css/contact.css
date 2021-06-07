@@ -1,42 +1,19 @@
-/*
---- color ---
-darkblue: #1d4c7f;
-paleblue: #eaf4ff;
-dark grey: #3b3b3b;
-grey: #707070;
-orange: #ff5f1f;
-*/
-
-/* main {
-    margin: 0 auto;
-} */
-/* 
-#mainContactForm fieldset {
+.formWrapper fieldset {
     text-align: left;
-    background-color: #eaf4ff;
-    border: solid 1px #1d4c7f;
     margin: 1.5em;
-} */
+}
 
-/* ul li {
-    list-style: none;
-} */
+label {
+    width: inherit;
+}
 
-/* form {
-    font-family: usual, sans-serif;
-} */
+input {
+    width: inherit;
+}
 
-/* legend {
-    font-family: minion-pro-caption, serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    padding: 0 .3em 0 .2em;
-    color: #1d4c7f;
-} */
-
-/* input, select {
+input, select {
     padding-left: .25em;
-} */
+}
 
 fieldset p {
     font-size: 1em;
@@ -66,15 +43,15 @@ fieldset.inq {
 }
 
 .phone input {
-    width: 125px;
+    width: 130px;
 }
 
 .zip input {
-    width: 65px;
+    width: 70px;
 }
 
 #contactForm input, select#qAbout {
-    height: 1.8em;
+    height: 2em;
 }
 
 .inqComm textarea {
@@ -91,6 +68,15 @@ input.button {
     border: none;
 }
 
+.checkBox li, .radioList li{
+    display: flex;
+}
+
+.checkBox li label, .radioList li label {
+    margin-top: 0;
+    padding-left: .5em;
+}
+
 .radioList {
     display: flex;
     flex-direction: row;
@@ -105,7 +91,7 @@ input.button {
 
 @media screen and (min-width: 370px) {
     .company input, .email input {
-    width: 280px;
+        width: 280px;
     }
 }
 
@@ -123,24 +109,19 @@ input.button {
     
 }
 
-@media screen and (min-width: 700px) {
-    
-}
-
 @media screen and (min-width: 800px) {
     .lName {
         display: block;
     }
     
     .company input, .email input {
-    width: 250px;
+        width: 250px;
     }
     
     .formWrapper {
         display: grid;
         grid-template-columns: 2fr 3fr;
         margin: 1.5em;
-        grid-gap: 1.5em;
     }
     
     fieldset {
@@ -154,8 +135,6 @@ input.button {
 
 @media screen and (min-width: 950px) {
     .company input, .email input {
-    width: 280px;
+        width: 280px;
     }
 }
-
-

@@ -382,7 +382,9 @@ a.blueBtn:hover {
     line-height: 1.3em;
     padding-bottom: 1em;
 }
-
+.servicesIntro {
+    padding-top: 1em;
+}
 #serArt {
     margin: 1em 0;
     padding: 2em 0;
@@ -605,6 +607,9 @@ fieldset {
     background-color: #eaf4ff;
 }
 legend {
+    font-family: minion-pro-caption, serif;
+    font-weight: 600;
+    font-size: 1.5em;
     font-style: italic;
     color: #1d4c7f;
     padding: 0 .5em;
