@@ -379,7 +379,6 @@ a.blueBtn:hover {
 }
 
 .twoCol p {
-    line-height: 1.3em;
     padding-bottom: 1em;
 }
 .servicesIntro {
@@ -447,11 +446,12 @@ span.ww {
 .ww h4 {
     font-size: 1.2em;
     font-weight: 600;
-    padding-bottom: .5em;
+    padding:  0 1em .5em 1em;
 }
 .waterSafetyP{
     border-bottom: solid 2px #eaf4ff;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
+    margin-bottom: 2em;
 }
 .brochure img {
     width: 80%;
@@ -498,6 +498,7 @@ span.ww {
 #fact {
     padding: 1.5em;
     border-top: solid 2px #eaf4ff;
+    margin-top: 4em;
 }
 
 #truths {
@@ -662,6 +663,9 @@ input {
 }
 
 /*** About us - Who we are page styles ***/
+.aboutIpssa {
+    padding: 1em 2em;
+}
 .aboutIpssa p {
     text-align: left;
 }
@@ -671,7 +675,6 @@ input {
     padding-left: 2em;
 }
 #missionIpssa h2 {
-    text-align: left;
     padding: 1em 0 .5em 0;
 }
 #missionIpssa {
