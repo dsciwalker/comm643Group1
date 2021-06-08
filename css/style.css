@@ -1,107 +1,111 @@
-/**
---- FONTS ---
-font-family: usual, sans-serif, 400, normal;
-font-family: usual, sans-serif, 400, italic;
-font-family: usual, sans-serif, 600, normal;
-font-family: usual, sans-serif, 700, normal;
-font-family: minion-pro, serif, 400, normal;
-font-family: minion-pro-caption, serif, 500, normal;
-font-family: minion-pro-caption, serif, 600, normal;
-
---- COLORS ---
-darkblue: #1d4c7f;
-paleblue: #eaf4ff;
-dark grey: #3b3b3b;
-grey: #707070;
-orange: #ff5f1f;
-
---- TABLE OF CONTENTS ---
-1. General styles
+/**********************************************************
+TABLE OF CONTENTS:
+----------------------------
+1. Adobe font kit
+2. General styles
     1.1 Responsive image
+    1.2 Button styles
+    1.3 Responsive Video styles
+    1.4 Responsive Map and Calendar
+    1.5 Form styles
+    1.6 Title Bar style for all pages
 2. cta - Join ipssa section styles
 3. Responsive Navigation bar
 4. Hero styles
 5. SaveLife(Water watcher) section styles
 6. Awards and Events section styles
 7. Footer styles
-8. Button styles
-9. Title Bar style for all pages
-10. Media Query: 615px and above 
-@media screen and (min-width: 615px)
-@media screen and (min-width: 700px)
-@media screen and (min-width: 800px)
-@media all and (min-width: 960px)
+8. Services page styles
+9. Safety - Water Safety page styles
+10. Members - Meeting page styles
+11. Join(members.html) page styles
+12. About us - Who we are page styles
+13. Resources - Continuing Education Program page styles
+14. Media Queries
+    @media screen and (min-width: 525px)
+    @media screen and (min-width: 615px)
+    @media screen and (min-width: 650px)
+    @media screen and (min-width: 700px)
+    @media screen and (min-width: 750px)
+    @media screen and (min-width: 800px)
+    @media all and (min-width: 960px)
+15. About Us - Contact Us page styles found under - css/contact.css
+16. CSS Normalization file found under - css/normalize.css
+17. Style guide is found under - css/styleGuide.css
+-----------------------------
 
+PROJECT DETAILS:
+-----------------------------
+AUTHOR: Muktha Krishnaswamy, Maki Hagan, David Walker
+PROJECT: IPSSA, San Diego
+VERSION: 1.0
+LAST UPDATE: 06/07/2021
+NOTES: Original website http://www.ipssasandiego.com/. This website has been redesigned and developed as a part of the Front-web design course at SDCE.
 
-**/
+COLOR GUIDE:
+---------------------------
+darkblue: #1d4c7f
+paleblue: #eaf4ff
+dark grey: #3b3b3b
+grey: #707070
+orange: #ff5f1f
 
-/* Adobe Font kit */
+TYPOGRAPHY GUIDE:
+---------------------------
+font-family: usual, sans-serif, 400, normal;(body)
+font-family: usual, sans-serif, 400, italic;(form legend)
+font-family: usual, sans-serif, 600, normal;(some h3)
+font-family: usual, sans-serif, 700, normal;(some h4)
+font-family: minion-pro, serif, 400, normal;(h3)
+font-family: minion-pro-caption, serif, 500, normal;(h2)
+font-family: minion-pro-caption, serif, 600, normal;(h1)
+
+**********************************************************/
+
+/*************** 1. Adobe Font kit ***************/
 @import url("https://use.typekit.net/mom4myj.css");
 
-/*** 1. General styles ***/
+/**********************************************************/
+/*************** 2. General styles ***************/
 article, aside, figure, footer, header, nav, main, section, video, audio {
     display: block;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: usual, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font: normal 400 16px/1.4 usual, sans-serif;
     color: #3b3b3b;
-    margin: 0 auto;
 }
-
 main {
     max-width: 1024px;
     text-align: center; 
     margin: 0 auto;
 }
-
 h1 {
-    font-family: minion-pro-caption, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2em;
+    font: normal 600 2em minion-pro-caption, serif;
     color: #1d4c7f;
 }
-
 h2 {
-    font-family: minion-pro-caption, serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.6em;
+    font: normal 500 1.6em minion-pro-caption, serif;
     color: #1d4c7f;
     padding: 1em 0;
 }
-
 h3 {
-    font-family: minion-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.4em;
+    font: normal 400 1.4em minion-pro, serif;
     color: #1d4c7f;
     padding: 1em 0;
 }
-
 h4 {
-    font-family: minion-pro-caption, serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1em;
+    font: normal 500 16px minion-pro-caption, serif;
     color: #1d4c7f;
 }
-
 p {
     padding: .5em 0;
     line-height: 1.4em;
 }
-
 a {
     color: #1d4c7f;
 }
@@ -110,21 +114,123 @@ a:hover {
     text-decoration: none;
     font-size: 1.1em;
 }
-
-/* 1.1 Responsive image */
+/*** 1.1 Responsive image ***/
 img {
     max-width: 100%;
     height: auto;
 }
+/*** 1.2 Button styles ***/
+a.whiteBtn {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff5f0d;
+    border: solid 1px #1d4c7f;
+    padding: .6em 1.2em .5em;
+    text-decoration: none;
+    margin: 1em;
+}
+a.blueBtn {
+    display: inline-block;
+    background-color: #1d4c7f;
+    color: #fff;
+    padding: .5em 2em;
+    text-decoration: none;
+    margin: 1em 0 .3em 0;
+}
+a.blueBtn:hover {
+    color: #1d4c7f;
+    background-color: #eaf4ff;
+    border: solid 1px #1d4c7f;
+    font-size: 1em;
+}
+/*** 1.3 Responsive Video styles ***/
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    margin: 0 25px;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/***  1.4 Responsive Map and Calendar ***/
+.map, .calWrapper {
+    position: relative;
+    padding-bottom: 65%;
+    height: 0;
+    overflow: hidden;
+}
+.map iframe, .calWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.calWrapper {
+    padding-bottom: 100%;
+}
 
-/***  2. cta - Join ipssa section styles ***/
+/*** 1.5 Form styles ***/
+fieldset {
+    padding: 1em;
+    border: solid 1px #1d4c7f;
+    background-color: #eaf4ff;
+}
+legend {
+    font: italic 400 1em usual, sans-serif;
+    color: #1d4c7f;
+    padding: 0 .5em;
+}
+label {
+    color: #1d4c7f;
+    margin: .5em 0 0;
+    display: block;
+    text-align: left;
+    width: 100px;
+}
+input {
+    padding: .5em;
+    margin: .25em 0;
+    color: #707070;
+    width: 100%;
+}
+::placeholder {
+    color: #707070;
+}
+#submitBtn {
+    background-color: #1d4c7f;
+    color: #fff;
+    padding: .75em 2em;
+    margin-top: 1em;
+    border: none;
+}
+
+/*** 1.6 Title Bar style for all pages ***/
+.titleBar {
+    background-color: #eaf4ff;
+    padding: 1em;
+}
+.titleBar h1{
+    text-align: center;
+}
+
+/**********************************************************/
+/*************** 2. cta - Join ipssa section styles ***************/
 #cta {
     background: #eaf4ff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .join h2 {
     font-size: 1.2em;
     font-weight: 500;
@@ -133,11 +239,9 @@ img {
     line-height: 1.5;
     margin-right: 1em;
 }
-
 .join .blueBtn {
     margin-bottom: 1em;
 }
-
 .joinLg {
     display: none;
 }
@@ -145,49 +249,41 @@ img {
     font-size: .9em;
 }
 
-/***  3. Responsive Navigation bar ***/
+/**********************************************************/
+/***************  3. Responsive Navigation bar ***************/
 .logo {
     font-size: 1.3em;
     padding: 15px 0 10px 40px;
 }
-
 .logo a img {
     max-height: 90px;
 }
-
 .navbar, .subNav {
     list-style-type: none;
 }
-
 .subNav {
     display: none;
     padding-left: 2px;
     font-size: .875em;
 }
-
 .subNav li:not(:last-of-type) {
     border-bottom: solid 1px #fff; 
 }
-
 .subNav li:first-of-type {
     border-top: solid 1px #fff;
 }
-
 .sactive .subNav {
     display: block;
 }
-
 .sactive {
     background-color: #eaf4ff;
 }
-
 .navbar  {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-
 .navItem {
     border-bottom: solid 1px #eaf4ff;
     padding: 5px 15px;
@@ -196,7 +292,6 @@ img {
     display: none;
     order: 3;
 }
-
 .toggle {
     font-size: 2em;
     padding: 40px;
@@ -205,7 +300,6 @@ img {
 .active .navItem {
     display: block;
 }
-
 .navItem a {
     display: block;
     padding: 10px 5px;
@@ -213,9 +307,12 @@ img {
     text-transform: uppercase;
     font-size: .875em;
 }
-
 .navItem a:hover {
     background-color: #eaf4ff;
+}
+.navItem .navJoinBtn{
+    padding: .5em 2em;
+    width: 90px;
 }
 .navItem .navJoinBtn:hover {
     color: #1d4c7f;
@@ -223,7 +320,9 @@ img {
     border: solid 1px #1d4c7f;
     font-size: .875em;
 }
-/*** 4. Hero styles ***/
+
+/**********************************************************/
+/***************  4. Hero styles ***************/
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
     background-size: cover;
@@ -231,41 +330,35 @@ img {
     height: 100%;
     text-align: center;
 }
-
 #hero p {
     color: #fff;
     padding: 0 2em;
 }
-
 #hero h1 {
     margin: 0;
     text-shadow: 0 0 8px #fff;
     padding: 0 1em;
 }
-
 #hero h1:first-child {
     padding-top: 2em;
     padding-bottom: .3em;
 }
-
 #hero h1:nth-child(2) {
     padding-bottom: 1em;
 }
-
 #hero .whiteBtn {
     margin-bottom: 3em;
 }
 
-/*** 5. SaveLife(Water watcher) section styles ***/
+/**********************************************************/
+/*************** 5. SaveLife(Water watcher) section styles ***************/
 .saveLife {
     padding: 1em 2em 1.5em;
 }
-
 .saveLife a {
     display: block;
     margin: 1em 0;
 }
-
 .saveLife a img {
     padding-top: .5em;
 }
@@ -277,25 +370,25 @@ img.wwTag {
     width: 80%;
 }
 
-/*** 6. Awards and Events section styles ***/
+/**********************************************************/
+/*************** 6. Awards and Events section styles ***************/
 #awards {
     margin: 1em 0;
     padding: 2em 0;
     border-top: solid 2px #eaf4ff;
 }
-
 #awards article {
     display: block;
     background-color: #eaf4ff;
     padding: 1em 2em 2em;
     margin: 3em 2em;
 }
-
 #awards article:last-child p:first-child {
     padding-top: 2em;
 }
 
-/*** 7. Footer styles ***/
+/**********************************************************/
+/***************  7. Footer styles ***************/
 footer {
     padding: 2em 1em;
     text-align: center;
@@ -333,51 +426,12 @@ footer h4 {
     font-size: .7em;
 }
 
-/***  8. Button styles ***/
-a.whiteBtn {
-    display: inline-block;
-    background-color: #fff;
-    color: #ff5f0d;
-    border: solid 1px #1d4c7f;
-    padding: .6em 1.2em .5em;
-    text-decoration: none;
-    margin: 1em;
-}
-
-a.blueBtn {
-    display: inline-block;
-    background-color: #1d4c7f;
-    color: #fff;
-    padding: .5em 2em;
-    text-decoration: none;
-    margin: 1em 0 .3em 0;
-}
-
-a.blueBtn:hover {
-    color: #1d4c7f;
-    background-color: #eaf4ff;
-    border: solid 1px #1d4c7f;
-    font-size: 1em;
-}
-
-/***  9. Title Bar style for all pages  ***/
-.titleBar {
-    background-color: #eaf4ff;
-    padding: 1em;
-}
-.titleBar h1{
-    text-align: center;
-}
-
-/*** Who We Are page styles ***/
-/*** Contact Us page styles ***/
-
-/*** Services page styles ***/
+/**********************************************************/
+/*************** 8. Services page styles ***************/
 .twoCol {
     margin: 1em 2em;
     padding-bottom: 4em;
 }
-
 .twoCol p {
     padding-bottom: 1em;
 }
@@ -389,7 +443,6 @@ a.blueBtn:hover {
     padding: 2em 0;
     border-top: solid 2px #eaf4ff;
 }
-
 #serArt article {
     display: block;
     background-color: #eaf4ff;
@@ -397,26 +450,24 @@ a.blueBtn:hover {
     margin: 3em 2em;
 }
 
-/*** Safety-Water Safety page styles ***/
+/**********************************************************/
+/*************** 9. Safety - Water Safety page styles ***************/
 span.ww {
     font-weight: 700;
     color: #1d4c7f;
 }
-
 /* sect.center styles */
 .center h3 {
     font-size: 1.5em;
     font-weight: 600;
     color: #ff5f1f;
 }
-
 /* sect.twoCol styles */
 .stwoCol h4 {
     font-family: usual, sans-serif;
     font-size: 1em;
     font-weight: 700;
 }
-
 .stwoCol img {
     width: 80%;
     padding: .5em 0;
@@ -424,25 +475,6 @@ span.ww {
 .stwoCol {
     margin: 0 1.5em;
 }
-/* video styles */
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-    overflow: hidden;
-    margin: 0 25px;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 .ww h4 {
     font-size: 1.2em;
     font-weight: 600;
@@ -457,55 +489,44 @@ span.ww {
     width: 80%;
     border: solid 1px #707070;
 }
-
 #outside, #inside {
     margin-bottom: 1.5em;
 }
-
 #outside a, #inside a {
     display: block;
 }
-
 .wwTag {
     margin: 0 .5em;
 }
-
 .test {
     border: solid 1px #1d4c7f;
     padding: .5em;
     margin: .5em 1em;
 }
-
 .test p {
     font-size: .8em;
     font-style: italic;
 }
-
 .learn p:first-child {
     font-size: 1.2em;
     font-weight: 600;
 }
-
 .learn p a.whiteBtn {
     margin: 1em 4em;
 }
-
 .learn p:nth-child(2) a, .learn p:last-child a {
     display: block;
 }
-
 /* sect.fact styles */
 #fact {
     padding: 1.5em;
     border-top: solid 2px #eaf4ff;
     margin-top: 4em;
 }
-
 #truths {
     margin: .5em 0;
     padding: 2em 0;
 }
-
 .five {
     display: block;
     background-color: #fefcd3;
@@ -513,49 +534,29 @@ span.ww {
     padding: 1em 2em 2em;
     margin: 2em auto 0;
 }
-
 .five ul {
     text-align: left;
 }
-
 .five ul li {
     padding-bottom: .5em;
 }
-
 img.svg {
     width: 3em;
     height: auto;
     padding-top: 1em;
 }
-
 #truths h3 {
     padding: .5em 0 .5em;
 }
 
+
 /*** Members-Login page styles ***/
 
 /*** Members-meetings page styles ***/
-/*  Responsive Map and Calendar */
-.map, .calWrapper {
-    position: relative;
-    /* padding-bottom: 48%;300/625 = 0.48 */
-    padding-bottom: 65%;
-    height: 0;
-    overflow: hidden;
-}
-.map iframe, .calWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-.calWrapper {
-    padding-bottom: 100%;
-}
 
 
+/**********************************************************/
+/*************** 10. Members - Meeting page styles ***************/
 /*  General meeting and Board meeting section styles */
 #generalMeeting, #boardMeeting {
     padding: 0 2em 2em 2em;
@@ -563,7 +564,6 @@ img.svg {
 #boardMeeting, #meetingInfo {
     border-top: solid 2px #eaf4ff;
 }
-
 .address, .note {
     margin-top: 1em;
 }
@@ -574,7 +574,6 @@ img.svg {
     color: #707070;
     font-size: .9em;
 }
-
 /*  Meeting info section styles */
 #news>p{
     padding: 0 1em 1em 1em;
@@ -590,9 +589,8 @@ img.svg {
     margin-bottom: 2em;
 }
 
-/*** Join(members.html) page styles ***/
-
-/* 1. General rules */
+/**********************************************************/
+/*************** 11. Join(members.html) page styles ***************/
 #joinIpssa h2 {
     padding-bottom: 2em;
 }
@@ -602,54 +600,14 @@ form ul,  #joinChecklist {
 #joinIpssa, #joinBenefits {
     padding: 1em 2em 4em 2em;
 }
-
-/* 2. Form styles */
-fieldset {
-    padding: 1em;
-    border: solid 1px #1d4c7f;
-    background-color: #eaf4ff;
-}
-legend {
-    font-family: minion-pro-caption, serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    font-style: italic;
-    color: #1d4c7f;
-    padding: 0 .5em;
-}
-label {
-    color: #1d4c7f;
-    margin: .5em 0 0;
-    display: block;
-    text-align: left;
-    width: 100px;
-}
-input {
-    padding: .5em;
-    margin: .25em 0;
-    color: #707070;
-    width: 100%;
-}
-::placeholder {
-    color: #707070;
-}
-#submitBtn {
-    background-color: #1d4c7f;
-    color: #fff;
-    padding: .75em 2em;
-    margin-top: 1em;
-    border: none;
-}
-
-/* 3. Join checklist style */
+/* Join checklist style */
 #joinChecklist {
     margin-top: 1em;
 }
 #joinChecklist li {
     padding: .5em 0;
 }
-
-/* 4. Benefits section style */
+/* Benefits section style */
 #joinBenefits {
     border-top: solid 2px #eaf4ff;
     margin-bottom: 2em;
@@ -662,7 +620,8 @@ input {
     text-align: left;
 }
 
-/*** About us - Who we are page styles ***/
+/**********************************************************/
+/*************** 12. About us - Who we are page styles ***************/
 .aboutIpssa {
     padding: 1em 2em;
 }
@@ -680,9 +639,9 @@ input {
 #missionIpssa {
     padding-bottom: 5em;
 }
-/*** About us - Who we are page styles - END ***/
 
-/*** Resources - Continuing Education Program page styles ***/
+/**********************************************************/
+/*************** 13. Resources - Continuing Education Program page styles ***************/
 .contEd p {
     text-align: left;
 }
@@ -698,10 +657,11 @@ input {
 #contEdList {
     padding-bottom: 5em;
 }
-/*** Resources - Continuing Education Program page styles - END ***/
-/* 10. Media Query: Mid screen layout style - Join(members.html) page styles */
+
+/**********************************************************/
+/*************** 14. Media Queries ***************/
 @media screen and (min-width: 525px) {
-    /* Form styles */
+    /*** Join(members.html) page Form styles ***/
     #joinForm label {
         display: inline-block;
     }
@@ -709,32 +669,24 @@ input {
         width: 250px;
     }
 }
-/*** 10. Media Query: 615px and above ***/
 @media screen and (min-width: 615px) {
-     /*** general ***/
-     body {
-        font-size: 16px;
-    }
     /*** nav ***/
     .join h2 {
         font-size: 1em;
         width: 60%;
         text-align: center;
     }
-    
     /*** home ***/
     .flexContainer {
         display: flex;
         flex-direction: column;
     }
-    
     .joinLg img {
         max-width: 410px;
         height: auto;
         padding: 0 3em 0 3em;
         align-self: center;
     }    
-    
     .colRt {
         margin: auto;
         padding: 1.5em 3em 0 3em;
@@ -747,25 +699,20 @@ input {
         margin: 0 50px;
     }
     .test p {
-    font-size: 1em;
+        font-size: 1em;
     }
-    
     .learn p a.whiteBtn {
-    margin: 1em;
+        margin: 1em;
     }
-
     .learn p:nth-child(2) a, .learn p:last-child a {
         display: inline;
     }
-    
     .five {
         width: 70%;
     }
 }
-
-/* Media Query: Mid and large screen layout - styles Members-meetings page styles */
 @media screen and (min-width: 650px) {
-    /* 5.1 General meeting and Board meeting section styles */
+    /*** Meetings page - General meeting and Board meeting section styles ***/
     #generalMeeting, #boardMeeting {
         display: grid;
         grid-gap: 1em;
@@ -787,7 +734,6 @@ input {
     .map { grid-area: map; }
     .address { grid-area: addr; }
     .note { grid-area: note; }
-
     #generalMeeting .address p, #generalMeeting .note p {
         text-align: left;
     }
@@ -797,7 +743,7 @@ input {
     .address, .note {
         margin-top: 0;
     }
-    /* 5.2 Meeting info section styles */
+    /***  Meeting info section styles ***/
     #meetingInfo {
         display: flex;
         flex-direction: row;
@@ -813,37 +759,31 @@ input {
         padding: 0 2em 2em 0;
     }
 }
-
 @media screen and (min-width: 700px) {
     /*** home ***/
     #cta {
         display: none;
     }
-    
     .joinLg {
         display: inherit;
         padding-bottom: 4em;
         border-bottom: solid 2px #eaf4ff;
     }
-
     #awards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .5em;
         padding: 2em;
     }
-    
     #awards article {
         padding: 1em 2em 2em;
         margin: 3em 0;
     }
-
     /*** Footer styles ***/
     footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     /*** Services page styles ***/
     #serArt {
         display: grid;
@@ -851,26 +791,23 @@ input {
         grid-gap: 1em;
         padding:  2em 2em 3em;
     }
-    
     #serArt article {
         padding: 1em 2em 2em;
         margin: 3em 0;
         display: flex;
         flex-direction: column;
     }
-    
     #serArt article p {
         height: 11em;
     }
 }
-/* 6. Media Query: large screen layout style - Join(members.html) page styles */
 @media screen and (min-width: 750px) {
+    /*** Join(members.html) page styles ***/
     #joinForm {
         width: 80%;
         margin: auto;
     }
 }
-
 @media screen and (min-width: 800px) {
     /*** home ***/    
     .joinLg img {
@@ -878,11 +815,9 @@ input {
         height: auto;
         padding: 0 1em 0 3em;
     }
-    
     .flexContainer {
         flex-direction: row;
     }
-    
     .colRt {
         margin: auto;
         padding: 0 3em 0 1em;
@@ -892,17 +827,14 @@ input {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
     .twoCol h2 {
         grid-column: span 2;
     }
-    
     .twoCol p {
         order: 2;
         padding: 0 0 0 1em;
         align-self: center;
     }
-    
     #serArt article p {
         height: 9em;
     }
@@ -914,7 +846,6 @@ input {
         align-items: center;
         padding: 0 1em;
     }
-    
     .stwoCol img {
         order: -1;
         grid-row: span 2;
@@ -938,7 +869,6 @@ input {
         margin: 2em 1em 0;
     }
 }
-
 @media all and (min-width: 960px){
     #hero {
         background: url(../images/hero-medium.jpeg) no-repeat center;
@@ -949,11 +879,9 @@ input {
     .logo a img {
         max-height: 110px;
     }
-
     nav {
         margin: 0 25px;
     }
-
     .navItem{
         position: relative;
         display: block;
@@ -961,7 +889,6 @@ input {
         order: 1;
         border: none;
     }
-
     .sactive .subNav {
         display: block;
     }
@@ -993,9 +920,9 @@ input {
         flex: 1;
         order: 0;
     }
-
     /*** Services page styles ***/
     #serArt article p {
         height: 8em;
     }
 }
+/************************ END **********************************/
