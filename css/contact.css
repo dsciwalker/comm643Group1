@@ -1,65 +1,61 @@
+/************************************************/
+/************ Contact us page style *************/
+/************************************************
+TABLE OF CONTENTS:
+------------------
+1. Form style rules
+2. Media Queries
+************************************************/
+
+/*** 1. Form style rules ***/
 .formWrapper fieldset {
     text-align: left;
     margin: 1.5em;
 }
-
 label {
     width: inherit;
 }
-
 input {
     width: inherit;
 }
-
 input, select {
     padding-left: .25em;
 }
-
 fieldset p {
     font-size: 1em;
     font-weight: 600;
     padding: .5em 0 0 0;
 }
-
 fieldset li {
     padding: .5em 0 0 .5em;
 }
-
 fieldset #contactForm label {
     display: block;
     padding-bottom: .1em;
 }
-
 fieldset.inq {
     padding: .5em 1em 1em;
 }
-
 .fName, .lName, .phone, .zip {
     display: inline-block;
 }
-
 .company input, .email input {
     width: 200px;
 }
-
 .phone input {
     width: 130px;
 }
-
 .zip input {
     width: 70px;
 }
-
 #contactForm input, select#qAbout {
     height: 2em;
 }
-
 .inqComm textarea {
     padding: .25em;
     width: 100%;
     min-height: 12em;
 }
-
 input.button {
     background-color: #1d4c7f;
     color: #fff;
@@ -67,72 +63,58 @@ input.button {
     margin: 0.5em 0 2em;
     border: none;
 }
-
 .checkBox li, .radioList li{
     display: flex;
 }
-
 .checkBox li label, .radioList li label {
     margin-top: 0;
     padding-left: .5em;
 }
-
 .radioList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     }
-
 .radioList li {
     margin-right: 1.5em;
 }
 
-
-
+/*** 2. Media Queries ***/
 @media screen and (min-width: 370px) {
     .company input, .email input {
         width: 280px;
     }
 }
-
 @media screen and (min-width: 500px) and (max-width: 799px) {
     .checkBox {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media screen and (min-width: 615px) and (max-width: 799px) {
     .email {
         display: inline-block;
-    }
-    
+    }   
 }
-
 @media screen and (min-width: 800px) {
     .lName {
         display: block;
     }
-    
     .company input, .email input {
         width: 250px;
     }
-    
     .formWrapper {
         display: grid;
         grid-template-columns: 2fr 3fr;
         margin: 1.5em;
     }
-    
     fieldset {
         margin: 0;
     }
-    
     .inqComm textarea {
         min-height: 24em;
     }
 }
-
 @media screen and (min-width: 950px) {
     .company input, .email input {
         width: 280px;
