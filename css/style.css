@@ -70,6 +70,7 @@ font-family: minion-pro-caption, serif, 600, normal;(h1)
 article, aside, figure, footer, header, nav, main, section, video, audio {
     display: block;
 }
+/*Universal selector */
 * {
     margin: 0;
     padding: 0;
@@ -102,6 +103,7 @@ h4 {
     font: normal 500 16px minion-pro-caption, serif;
     color: #1d4c7f;
 }
+/* Individual element selctor */
 p {
     padding: .5em 0;
     line-height: 1.4em;
@@ -109,6 +111,7 @@ p {
 a {
     color: #1d4c7f;
 }
+/* Pseudo-class selector */
 a:hover {
     cursor: pointer;
     text-decoration: none;
@@ -161,6 +164,7 @@ a.blueBtn:hover {
     border: none;
 }
 /***  2.4 Responsive Map and Calendar ***/
+/* Grouped selector */
 .map, .calWrapper {
     position: relative;
     padding-bottom: 65%;
@@ -206,6 +210,7 @@ input {
 ::placeholder {
     color: #707070;
 }
+/* ID selector */
 #submitBtn {
     background-color: #1d4c7f;
     color: #fff;
@@ -215,6 +220,7 @@ input {
 }
 
 /*** 2.6 Title Bar style for all pages ***/
+/* Class selector */
 .titleBar {
     background-color: #eaf4ff;
     padding: 1em;
@@ -255,6 +261,7 @@ input {
     font-size: 1.3em;
     padding: 15px 0 10px 40px;
 }
+/* Descendent selector */
 .logo a img {
     max-height: 90px;
 }
@@ -575,6 +582,7 @@ img.svg {
     font-size: .9em;
 }
 /*  Meeting info section styles */
+/* Child selector */
 #news>p{
     padding: 0 1em 1em 1em;
 }
