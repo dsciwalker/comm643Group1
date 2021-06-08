@@ -1,7 +1,7 @@
 # IPSSA San Diego
 
 ## Description:
-This website has been created as a part of Front end web development course at SDCE. 
+This website has been redesigned and developed as a part of Front end web development course at SDCE. 
 
 ## Live site:
 https://dsciwalker.github.io/ipssaSanDiego/
