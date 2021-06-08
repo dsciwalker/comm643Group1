@@ -3,25 +3,25 @@ TABLE OF CONTENTS:
 ----------------------------
 1. Adobe font kit
 2. General styles
-    1.1 Responsive image
-    1.2 Button styles
-    1.3 Responsive Video styles
-    1.4 Responsive Map and Calendar
-    1.5 Form styles
-    1.6 Title Bar style for all pages
-2. cta - Join ipssa section styles
-3. Responsive Navigation bar
-4. Hero styles
-5. SaveLife(Water watcher) section styles
-6. Awards and Events section styles
-7. Footer styles
-8. Services page styles
-9. Safety - Water Safety page styles
-10. Members - Meeting page styles
-11. Join(members.html) page styles
-12. About us - Who we are page styles
-13. Resources - Continuing Education Program page styles
-14. Media Queries
+    2.1 Responsive image
+    2.2 Button styles
+    2.3 Responsive Video styles
+    2.4 Responsive Map and Calendar
+    2.5 Form styles
+    2.6 Title Bar style for all pages
+3. cta - Join ipssa section styles
+4. Responsive Navigation bar
+5. Hero styles
+6. SaveLife(Water watcher) section styles
+7. Awards and Events section styles
+8. Footer styles
+9. Services page styles
+10. Safety - Water Safety page styles
+11. Members - Meeting page styles
+12. Join(members.html) page styles
+13. About us - Who we are page styles
+14. Resources - Continuing Education Program page styles
+15. Media Queries
     @media screen and (min-width: 525px)
     @media screen and (min-width: 615px)
     @media screen and (min-width: 650px)
@@ -29,9 +29,9 @@ TABLE OF CONTENTS:
     @media screen and (min-width: 750px)
     @media screen and (min-width: 800px)
     @media all and (min-width: 960px)
-15. About Us - Contact Us page styles found under - css/contact.css
-16. CSS Normalization file found under - css/normalize.css
-17. Style guide is found under - css/styleGuide.css
+16. About Us - Contact Us page styles found under - css/contact.css
+17. CSS Normalization file found under - css/normalize.css
+18. Style guide is found under - css/styleGuide.css
 -----------------------------
 
 PROJECT DETAILS:
@@ -114,12 +114,12 @@ a:hover {
     text-decoration: none;
     font-size: 1.1em;
 }
-/*** 1.1 Responsive image ***/
+/*** 2.1 Responsive image ***/
 img {
     max-width: 100%;
     height: auto;
 }
-/*** 1.2 Button styles ***/
+/*** 2.2 Button styles ***/
 a.whiteBtn {
     display: inline-block;
     background-color: #fff;
@@ -143,7 +143,7 @@ a.blueBtn:hover {
     border: solid 1px #1d4c7f;
     font-size: 1em;
 }
-/*** 1.3 Responsive Video styles ***/
+/*** 2.3 Responsive Video styles ***/
 .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -160,7 +160,7 @@ a.blueBtn:hover {
     height: 100%;
     border: none;
 }
-/***  1.4 Responsive Map and Calendar ***/
+/***  2.4 Responsive Map and Calendar ***/
 .map, .calWrapper {
     position: relative;
     padding-bottom: 65%;
@@ -179,7 +179,7 @@ a.blueBtn:hover {
     padding-bottom: 100%;
 }
 
-/*** 1.5 Form styles ***/
+/*** 2.5 Form styles ***/
 fieldset {
     padding: 1em;
     border: solid 1px #1d4c7f;
@@ -214,7 +214,7 @@ input {
     border: none;
 }
 
-/*** 1.6 Title Bar style for all pages ***/
+/*** 2.6 Title Bar style for all pages ***/
 .titleBar {
     background-color: #eaf4ff;
     padding: 1em;
@@ -224,7 +224,7 @@ input {
 }
 
 /**********************************************************/
-/*************** 2. cta - Join ipssa section styles ***************/
+/*************** 3. cta - Join ipssa section styles ***************/
 #cta {
     background: #eaf4ff;
     display: flex;
@@ -250,7 +250,7 @@ input {
 }
 
 /**********************************************************/
-/***************  3. Responsive Navigation bar ***************/
+/***************  4. Responsive Navigation bar ***************/
 .logo {
     font-size: 1.3em;
     padding: 15px 0 10px 40px;
@@ -322,7 +322,7 @@ input {
 }
 
 /**********************************************************/
-/***************  4. Hero styles ***************/
+/***************  5. Hero styles ***************/
 #hero {
     background: url(../images/hero-small.jpeg) no-repeat center;
     background-size: cover;
@@ -351,7 +351,7 @@ input {
 }
 
 /**********************************************************/
-/*************** 5. SaveLife(Water watcher) section styles ***************/
+/*************** 6. SaveLife(Water watcher) section styles ***************/
 .saveLife {
     padding: 1em 2em 1.5em;
 }
@@ -371,7 +371,7 @@ img.wwTag {
 }
 
 /**********************************************************/
-/*************** 6. Awards and Events section styles ***************/
+/*************** 7. Awards and Events section styles ***************/
 #awards {
     margin: 1em 0;
     padding: 2em 0;
@@ -388,7 +388,7 @@ img.wwTag {
 }
 
 /**********************************************************/
-/***************  7. Footer styles ***************/
+/***************  8. Footer styles ***************/
 footer {
     padding: 2em 1em;
     text-align: center;
@@ -427,7 +427,7 @@ footer h4 {
 }
 
 /**********************************************************/
-/*************** 8. Services page styles ***************/
+/*************** 9. Services page styles ***************/
 .twoCol {
     margin: 1em 2em;
     padding-bottom: 4em;
@@ -451,7 +451,7 @@ footer h4 {
 }
 
 /**********************************************************/
-/*************** 9. Safety - Water Safety page styles ***************/
+/*************** 10. Safety - Water Safety page styles ***************/
 span.ww {
     font-weight: 700;
     color: #1d4c7f;
@@ -556,7 +556,7 @@ img.svg {
 
 
 /**********************************************************/
-/*************** 10. Members - Meeting page styles ***************/
+/*************** 11. Members - Meeting page styles ***************/
 /*  General meeting and Board meeting section styles */
 #generalMeeting, #boardMeeting {
     padding: 0 2em 2em 2em;
@@ -590,7 +590,7 @@ img.svg {
 }
 
 /**********************************************************/
-/*************** 11. Join(members.html) page styles ***************/
+/*************** 12. Join(members.html) page styles ***************/
 #joinIpssa h2 {
     padding-bottom: 2em;
 }
@@ -621,7 +621,7 @@ form ul,  #joinChecklist {
 }
 
 /**********************************************************/
-/*************** 12. About us - Who we are page styles ***************/
+/*************** 13. About us - Who we are page styles ***************/
 .aboutIpssa {
     padding: 1em 2em;
 }
@@ -641,7 +641,7 @@ form ul,  #joinChecklist {
 }
 
 /**********************************************************/
-/*************** 13. Resources - Continuing Education Program page styles ***************/
+/*************** 14. Resources - Continuing Education Program page styles ***************/
 .contEd p {
     text-align: left;
 }
@@ -659,7 +659,7 @@ form ul,  #joinChecklist {
 }
 
 /**********************************************************/
-/*************** 14. Media Queries ***************/
+/*************** 15. Media Queries ***************/
 @media screen and (min-width: 525px) {
     /*** Join(members.html) page Form styles ***/
     #joinForm label {
