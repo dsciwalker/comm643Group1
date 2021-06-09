@@ -594,7 +594,7 @@ img.svg {
 #news, #calendar {
     margin-top: 2em;
 }
-#meetingInfo{
+#meetingInfo, #eventInfo{
     margin-bottom: 2em;
 }
 
@@ -753,7 +753,7 @@ form ul,  #joinChecklist {
         margin-top: 0;
     }
     /***  Meeting info section styles ***/
-    #meetingInfo {
+    #meetingInfo, #eventInfo {
         display: flex;
         flex-direction: row;
         align-items: center;
