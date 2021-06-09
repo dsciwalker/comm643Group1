@@ -54,7 +54,7 @@ orange: #ff5f1f
 TYPOGRAPHY GUIDE:
 ---------------------------
 font-family: usual, sans-serif, 400, normal;(body)
-font-family: usual, sans-serif, 400, italic;(form legend)
+font-family: usual, sans-serif, 400, italic;(form legend, subheadings in paragraph)
 font-family: usual, sans-serif, 600, normal;(some h3)
 font-family: usual, sans-serif, 700, normal;(some h4)
 font-family: minion-pro, serif, 400, normal;(h3)
@@ -651,20 +651,26 @@ form ul,  #joinChecklist {
 
 /**********************************************************/
 /*************** 14. Resources - Continuing Education Program page styles ***************/
-.contEd p {
+#contEd  {
+    padding: 3em 2em 0;
     text-align: left;
 }
-.contEdList ul{
+#contEdApplication{
+    padding: 0 2em 5em;
+    text-align: left;
+}
+#contEdApplication a {
+    display: block;
+    padding: .25em 0;
+}
+#contEdApplication h3 {
+    font: italic 400 1em usual, sans-serif;
+    color:#3b3b3b;
+}
+#contEdApplication  ul{
     list-style-type: square;
-    text-align: left;
     padding-left: 2em;
-}
-#contEdList h2, #contEdList h3 {
-    text-align: left;
-    padding: 1em 0 .5em 0;
-}
-#contEdList {
-    padding-bottom: 5em;
+    margin-top: -.75em;
 }
 
 /**********************************************************/
